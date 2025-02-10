@@ -1,0 +1,57 @@
+$color-orange: #ff7315;
+$font-twenty:20px;
+@mixin addTransition {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+@mixin btnStyle {
+  background-color: $color-orange !important;
+  color: #fff;
+}
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir.eot") format("eot"),
+    url("../fonts/vazir.ttf") format("truetype"),
+    url("../fonts/vazir.woff") format("woff"),
+    url("../fonts/vazir.woff2") format("woff2");
+}
+%active-option{
+  color: $color-orange !important;
+}
+
+%none-decoration{
+  text-decoration: none;
+}
+
+body {
+  font-family: "vazir";
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+button,input{
+    font-family: vazir;
+}
+.title-style{
+  h4 span{
+    color: $color-orange;
+  }
+}

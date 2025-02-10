@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/product.css" />
+    <title>shoes</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="menu">
+            <ul>
+              <div class="close-menu">
+                <i class="fas fa-times"></i>
+              </div>
+              <li>
+                <a href="#">خانه <i class="fas fa-home"></i></a>
+              </li>
+              <li id="dropdown">
+                <a href="#">محصولات <i class="fas fa-shopping-cart"></i></a>
+                <ul class="mega-menu">
+                  <li>
+                    <h2>زنانه</h2>
+                    <ul>
+                      <li><a href="">کت و شلوار</a></li>
+                      <li><a href="">لباس مجلسی</a></li>
+                      <li><a href="">عینک های برند</a></li>
+                      <li><a href="">عطرهای محبوب</a></li>
+                      <li><a href=""> کیف </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h2>مردانه</h2>
+                    <ul>
+                      <li><a href="">کت و شلوار</a></li>
+                      <li><a href="">لباس مجلسی</a></li>
+                      <li><a href="">عینک های برند</a></li>
+                      <li><a href="">عطرهای محبوب</a></li>
+                      <li><a href=""> کیف </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h2>بچگانه</h2>
+                    <ul>
+                      <li><a href="">کت و شلوار</a></li>
+                      <li><a href="">لباس مجلسی</a></li>
+                      <li><a href="">عینک های برند</a></li>
+                      <li><a href="">عطرهای محبوب</a></li>
+                      <li><a href=""> کیف </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <img src="../images/6.jpg" alt="" />
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">سبد خرید <i class="fas fa-credit-card"></i></a>
+              </li>
+              <li>
+                <a href="#">آخرین مطالب <i class="fas fa-blog"></i></a>
+              </li>
+              <li>
+                <a href="#">درباره ما <i class="fas fa-address-card"></i></a>
+              </li>
+              <li>
+                <a href="#">تماس با ما <i class="fas fa-mobile-alt"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-icon">
+            <div></div>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <ul>
+                  <li><a href="">ثبت نام</a></li>
+                  <li><a href="">ورود</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-search"></i></a>
+              </li>
+            </ul>
+            <button>سبد سفارش شما</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <div class="container">
+        <div class="banner">
+          <div class="img-banner">
+            <img src="../images/nav-banner.png" alt="" />
+          </div>
+          <div class="logo">
+            <img src="../images/logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-info">
+      <div class="container">
+        <div class="product">
+          <div class="info">
+            <div class="info-img">
+              <h3 class="img-title info">ماکسی گلایول</h3>
+              <h4 class="price info">قیمت: <span>255000</span></h4>
+              <h4 class="colors">
+                رنگ های موجود:
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </h4>
+
+              <h4>
+                برای خرید با فروشنده این محصول تماس بگیرید تا محصول را برای شما
+                ارسال کند
+              </h4>
+              <button onclick="addBasket(this)">افزودن به سبد خرید</button>
+            </div>
+            <div class="brand-img">
+              <div class="brand-info">
+                <div>
+                  <h4>فروشنده این محصول</h4>
+                  <h4>شیک پوش یاراول</h4>
+                  <h4><i class="fas fa-map"></i>ارسال به سراسر کشور</h4>
+                </div>
+                <button>دنبال کنید</button>
+              </div>
+              <div class="brand-history">
+                <h4>سطح فروشگاه : <span>نقره ای</span></h4>
+                <h4>فعالیت از 1سال و 5 ماه پیش</h4>
+              </div>
+            </div>
+          </div>
+          <div class="picture">
+            <div class="wrapper-img">
+              <img class="product-img" src="../images/product/1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="about-us">
+            <h3>درباره ما</h3>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+              کتابهای زیادی در شصت و سه درصد گذشته
+            </p>
+          </div>
+          <div class="social">
+            <h3>دنبال کنید</h3>
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="last-news">
+            <h3>دریافت آخرین اخبار</h3>
+            <form>
+              <input type="text" placeholder="ایمیل خود راوارد کنید..." />
+              <button>عضویت</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="services-customers">
+            <ul>
+              <li><a href="#">خدمات مشتریان</a></li>
+              <li><a href="#">پرسش های متداول</a></li>
+              <li><a href="#">حریم خصوصی</a></li>
+              <li><a href="#">گارانتی بازگشت وجه</a></li>
+              <li><a href="#">شرایط استفاده</a></li>
+            </ul>
+          </div>
+          <div class="quick-access">
+            <ul>
+              <li><a href="#">دسترسی سریع</a></li>
+              <li><a href="#">خانه</a></li>
+              <li><a href="#">درباره ما</a></li>
+              <li><a href="#">تماس با ما</a></li>
+              <li><a href="#">فروش</a></li>
+            </ul>
+          </div>
+          <div class="icons">
+            <div class="wrapper-icon">
+              <div class="img-single">
+                <img src="../images/f1.png" alt="" />
+              </div>
+              <div class="img-single">
+                <img src="../images/f2.png" alt="" />
+              </div>
+              <div class="img-single">
+                <img src="../images/f3.png" alt="" />
+              </div>
+              <div class="img-single">
+                <img src="../images/logo.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/single-product.js"></script>
+  </body>
+</html>

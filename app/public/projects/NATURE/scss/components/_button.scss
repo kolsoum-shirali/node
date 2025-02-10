@@ -1,0 +1,19 @@
+.header__heading-primary {
+  .btn--animated {
+    @include btnStyle;
+    animation-name: moveTotop;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+    &::after {
+      @include btnStyleAfter;
+    }
+    &:hover {
+     @include btnStyleHover;
+      &::after {
+        @include btnStyleHoverAfter;
+      }
+    }
+  }
+}

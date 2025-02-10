@@ -1,0 +1,463 @@
+header {
+  .header {
+    .carousel {
+      flex: 0 0 70%;
+      max-width: 70%;
+      @media screen and (max-width: 992px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .header-title {
+        nav {
+          z-index: 100;
+          @media screen and (max-width: 400px) {
+            display: none;
+          }
+          #navbarNav .navbar-nav li.active a {
+            @extend %active-option;
+          }
+        }
+        a {
+          @extend %none-decoration;
+        }
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        .title {
+          @media screen and(max-width:400px) {
+            display: block !important;
+          }
+          h6:nth-child(1),
+          h6:nth-child(2) a,
+          h6:nth-child(3) a svg {
+            color: #fff;
+          }
+
+          h6:nth-child(2) a:hover {
+            @include addTransition;
+            color: blue;
+          }
+          h6:nth-child(3) a {
+            @include addTransition;
+            color: $color-orange;
+            &:hover {
+              color: blue;
+            }
+          }
+        }
+      }
+      .carousel-item {
+        .carousel-caption {
+          button {
+            @include addTransition;
+            background-color: #fff;
+            &:hover {
+              @include btnStyle;
+            }
+          }
+        }
+      }
+    }
+    .left-img {
+      flex: 0 0 30%;
+      max-width: 30%;
+      @media screen and (max-width: 992px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .content {
+        a {
+          text-decoration: none;
+        }
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("../images/coat2.png") center no-repeat;
+        background-size: cover;
+        .brand-product {
+          button {
+            background-color: #fff;
+          }
+        }
+        .brand a {
+          @include addTransition;
+          span {
+            @include addTransition;
+          }
+          svg {
+            @include addTransition;
+          }
+          &:nth-child(1) {
+            font-family: cursive;
+            font-size: 20px;
+            color: #fff;
+            span {
+              color: $color-orange;
+            }
+            &:hover {
+              color: blue;
+            }
+          }
+          &:nth-child(2) {
+            @include addTransition;
+            &:hover {
+              span,
+              svg {
+                color: blue;
+              }
+            }
+          }
+        }
+        .brand-product {
+          button {
+            @include addTransition;
+            &:hover {
+              @include btnStyle;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// our-products
+
+#our-products {
+  .products {
+    .single-product {
+      h4 {
+        font-size: $font-twenty;
+        font-weight: 900;
+      }
+      .product-img {
+        .overlay {
+          top: 15%;
+          bottom: 15%;
+          left: 18%;
+          right: 18%;
+          background-color: rgba($color: #000000, $alpha: 0.6);
+          opacity: 0;
+          transform: rotate3d(-1, 1, 1, 100deg);
+          -webkit-transform: rotate3d(-1, 1, 1, 100deg);
+          -moz-transform: rotate3d(-1, 1, 1, 100deg);
+          -ms-transform: rotate3d(-1, 1, 1, 100deg);
+          -o-transform: rotate3d(-1, 1, 1, 100deg);
+          @include addTransition;
+          cursor: pointer;
+          h5 {
+            @include addTransition;
+          }
+          &:hover h5 {
+            color: $color-orange !important;
+          }
+        }
+        &:hover .overlay {
+          opacity: 1;
+          transform: rotate3d(0, 0, 0, 0deg);
+          -webkit-transform: rotate3d(0, 0, 0, 0deg);
+          -moz-transform: rotate3d(0, 0, 0, 0deg);
+          -ms-transform: rotate3d(0, 0, 0, 0deg);
+          -o-transform: rotate3d(0, 0, 0, 0deg);
+        }
+      }
+    }
+  }
+}
+
+// off-menu
+#off-menu {
+  background-color: #f8f8f8 !important;
+  .off-content {
+    h4 span {
+      color: $color-orange;
+    }
+    button {
+      @include addTransition;
+      border: none;
+      &:hover {
+        @include btnStyle;
+      }
+    }
+  }
+}
+// our-shop
+
+#our-shop {
+  .shop-clothes {
+    .single-clothes {
+      overflow: hidden;
+      .single-clothes-img {
+        .img-overlay {
+          @include addTransition;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          opacity: 0;
+          visibility: hidden;
+          .add-overlay {
+            .img-content-overlay {
+              overflow: hidden;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              h6 {
+                @include addTransition;
+                transform: translateY(100%);
+                -webkit-transform: translateY(100%);
+                -moz-transform: translateY(100%);
+                -ms-transform: translateY(100%);
+                -o-transform: translateY(100%);
+                @include addTransition;
+                &:hover {
+                  background-color: $color-orange !important;
+                }
+              }
+              .single-img-btn {
+                @include addTransition;
+                transform: translateX(30%);
+                -webkit-transform: translateX(30%);
+                -moz-transform: translateX(30%);
+                -ms-transform: translateX(30%);
+                -o-transform: translateX(30%);
+                button {
+                  border: none;
+                  &:hover {
+                    background-color: $color-orange;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:hover .img-overlay {
+          opacity: 1;
+          visibility: visible;
+          cursor: pointer;
+          .img-content-overlay {
+            .single-img-btn {
+              transform: translateX(0);
+              -webkit-transform: translateX(0);
+              -moz-transform: translateX(0);
+              -ms-transform: translateX(0);
+              -o-transform: translateX(0);
+            }
+            h6 {
+              transform: translateY(0);
+              -webkit-transform: translateY(0);
+              -moz-transform: translateY(0);
+              -ms-transform: translateY(0);
+              -o-transform: translateY(0);
+            }
+          }
+        }
+      }
+      .img-price {
+        h5 span:nth-child(1) {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}
+
+// banner
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url("../images/bg3.jpg") center no-repeat;
+  background-size: cover;
+  .banner-content {
+    p {
+      line-height: 2;
+    }
+    button {
+      @include addTransition;
+      border: none;
+      &:hover {
+        @include btnStyle;
+      }
+    }
+  }
+}
+
+// blogs
+#blogs {
+  background-color: #fff !important;
+  .card {
+    overflow: hidden;
+    img {
+      @include addTransition;
+    }
+    &:hover img {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+    }
+    .card-body {
+      .card-title {
+        font-size: 13px !important;
+      }
+      .card-text {
+        font-size: 15px;
+        line-height: 1.5;
+        cursor: pointer;
+        @include addTransition;
+        &:hover {
+          color: $color-orange;
+        }
+      }
+    }
+  }
+}
+
+// customers
+
+#customers {
+  background-color: #f8f8f8;
+  .carousel {
+    ol {
+      bottom: -60px;
+      li {
+        width: 15px;
+        height: 15px;
+        background-color: #000000;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+    }
+    .carousel-item {
+      .single-customer {
+        background-color: #000000;
+        position: relative;
+        :before {
+          content: "";
+          position: absolute;
+          right: 0;
+          left: 0;
+          margin: auto;
+          bottom: -10px;
+          width: 20px;
+          height: 20px;
+          background-color: #000000;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+        }
+        .customer-idea {
+          svg {
+            color: $color-orange;
+          }
+          p {
+            line-height: 1.5;
+            text-align: justify;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// subscribe
+#subscribe {
+  .subscribe-content {
+    form {
+      .form-content {
+        overflow: hidden;
+      }
+      input {
+        border: none;
+        outline: none;
+        background-color: #f8f8f8;
+        height: 50px;
+      }
+      button {
+        background-color: $color-orange;
+        height: 50px;
+      }
+    }
+  }
+}
+
+// footer
+footer {
+  p {
+    line-height: 1.75;
+  }
+  background-color: #222121;
+  .footer-right-side {
+    a {
+      font-family: cursive;
+      @extend %none-decoration;
+      span {
+        color: $color-orange;
+      }
+    }
+
+    .social {
+      button {
+        @include addTransition;
+        margin: 0 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        &:hover {
+          @include btnStyle;
+        }
+        svg {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .footer-left-side {
+    .links {
+      ul {
+        padding: 15px 0;
+        li {
+          padding: 5px 0;
+          a {
+            @include addTransition;
+
+            color: #fff;
+            @extend %none-decoration;
+            &:hover {
+              color: $color-orange;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copy-right {
+    ul {
+      @media screen and (max-width:450px){
+        display: block !important;
+        text-align: center;
+      }
+      li {
+        padding: 10px;
+        a {
+            color: #fff;
+          @include addTransition;
+          @extend %none-decoration;
+            &:hover {
+              color: $color-orange;
+            }
+        }
+      }
+    }
+  }
+}

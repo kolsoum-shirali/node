@@ -1,0 +1,121 @@
+.booking {
+  padding: 5rem 0;
+  position: relative;
+  @include addFlexLayout;
+  background: linear-gradient(
+    to right bottom,
+    rgba($color-light-green, 0.8),
+    rgba($color-dark-green, 0.8)
+  );
+  &__tour {
+    @include sizeWrapper;
+
+    background: url("../../img/nat-10.jpg") no-repeat;
+    background-size: cover;
+    &-form {
+      padding: 10rem 0;
+      width: 60%;
+      height: 100%;
+      background-color: rgba($color-white, 0.8);
+      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 26% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 26% 100%);
+      @media screen and (max-width: 992px) {
+        width: 75%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 100% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      }
+      .about__main {
+        margin: 0;
+        padding: 2rem 0;
+        font-size: $font-size-30;
+      }
+      form {
+        .tour--form-input {
+          @include addFlexLayout(column);
+          input {
+            padding: 1.25rem;
+            width: 50%;
+            margin: auto;
+            margin: 1.5rem;
+          }
+          .tour--form-radio {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            // flex-wrap: wrap;
+            justify-content: space-between;
+            @media screen and (max-width: 800px) {
+              display: block;
+              justify-content: center;
+            }
+            .tour--form-single {
+              @include addFlexLayout(row);
+              input {
+                margin: 3rem 0;
+                width: 2.5rem;
+                height: 2.5rem;
+                position: relative;
+
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  left: 0;
+                  bottom: 0;
+                  border: 5px solid $color-dark-green;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                }
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 20%;
+                  right: 20%;
+                  left: 20%;
+                  bottom: 20%;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  background-color: $color-dark-green;
+                  opacity: 0;
+                }
+                &:checked::after {
+                  opacity: 1 !important;
+                }
+              }
+              a {
+                font-size: 1.5rem;
+                color: $color-gray-dark;
+              }
+            }
+          }
+          button {
+            @include btnStyle;
+            font-size: 1.5rem;
+            background: $color-dark-green;
+            margin: 0;
+            &::after {
+              @include btnStyleAfter;
+            }
+            &:hover {
+              @include btnStyleHover;
+              &::after {
+                @include btnStyleHoverAfter(1.7);
+                background-color: $color-dark-green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

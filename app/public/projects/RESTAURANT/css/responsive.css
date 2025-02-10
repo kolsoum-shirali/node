@@ -1,0 +1,21 @@
+@media screen and (max-width: 992px) {
+  .foods .foods-wrapper .single-food {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .foods .foods-wrapper .single-food {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .foods .foods-wrapper .single-food {
+    flex: 0 0 calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

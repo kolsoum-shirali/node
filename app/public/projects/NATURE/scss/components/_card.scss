@@ -1,0 +1,180 @@
+.card {
+  overflow: hidden;
+  width: 100%;
+  &__wrapper {
+    padding-bottom: 5rem;
+    @include cardLayout;
+    @include sizeWrapper;
+     @media screen and (max-width: 900px) {
+       justify-content: center;
+      }
+    .card__item {
+      @include cardRadius(20px);
+      position: relative;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      flex: 0 0 calc(33.33% - 10px);
+      max-width: calc(33.33% - 10px);
+      box-shadow: $box-shadow-custom;
+      @media screen and (max-width: 900px) {
+        flex: 0 0 60%;
+        max-width: 60%;
+        margin-bottom: 2rem;
+      }
+        @media screen and (max-width: 768px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      &-front {
+        @include cardRadius(20px);
+
+        .card--item-img {
+          clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
+          width: 100%;
+          @include cardRadius(20px);
+          overflow: hidden;
+
+          .card--item-first {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(
+                to right bottom,
+                rgba($color-light-green, 0.6),
+                rgba($color-dark-green, 0.6)
+              ),
+              url("../../img/nat-10.jpg");
+              background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+
+          .card--item-second {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(
+                to right bottom,
+                rgba($color-light-green, 0.8),
+                rgba($color-dark-green, 0.8)
+              ),
+              url("../../img/nat-7.jpg") no-repeat !important;
+            background-position: top;
+            background-size: cover;
+          }
+          .card--item-third {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(
+                to right bottom,
+                rgba($color-light-green, 0.8),
+                rgba($color-dark-green, 0.8)
+              ),
+              url("../../img/nat-4.jpg") no-repeat !important;
+            background-position: top;
+            background-size: cover;
+          }
+        }
+
+        .card__item-services {
+          text-align: center;
+          h2 {
+            padding: 1rem 0;
+            position: relative;
+            &::after {
+              position: absolute;
+              content: "";
+              background-color: rgba(119, 119, 119, 0.151);
+              top: 97%;
+              bottom: 0;
+              right: 25%;
+              left: 25%;
+            }
+            &:last-child::after {
+              background-color: $color-white;
+              top: 100%;
+            }
+          }
+        }
+      }
+      &-back {
+        @include cardRadius(20px);
+
+        opacity: 0;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        visibility: hidden;
+        @extend %extendTransition;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          to right bottom,
+          rgba($color-light-green, 0.8),
+          rgba($color-dark-green, 0.8)
+        );
+        .item--back-wrapper {
+          width: 100%;
+          height: 100%;
+          @include addFlexLayout(column);
+          h1 {
+            font-size: $font-size-30;
+          }
+          button {
+            @include btnStyle;
+            &::after {
+              @include btnStyleAfter;
+            }
+            &:hover {
+              @include btnStyleHover;
+              &::after {
+                @include btnStyleHoverAfter(1.7);
+              }
+            }
+          }
+        }
+      }
+
+      &:hover {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        .card__item-back {
+          visibility: visible;
+          opacity: 1;
+        }
+        .card__item-front {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  &__btn-more {
+    padding-bottom: 5rem;
+    @include addFlexLayout;
+    .btn--more {
+      background-color: $color-dark-green;
+      @include btnStyle;
+      color: white;
+      font-size: 2rem;
+      &::after {
+        @include btnStyleAfter;
+      }
+      &:hover {
+        @include btnStyleHover;
+        &::after {
+          @include btnStyleHoverAfter(1.7);
+          background-color: $color-dark-green;
+        }
+      }
+    }
+  }
+}

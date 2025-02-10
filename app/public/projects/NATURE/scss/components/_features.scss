@@ -1,0 +1,67 @@
+.features {
+  background: linear-gradient(
+      to right bottom,
+      rgba($color-light-green, 0.8),
+      rgba($color-dark-green, 0.8)
+    ),
+    url("../img/nat-4.jpg") no-repeat center;
+    background-size: cover;
+  clip-path: polygon(0 19%, 100% 0%, 100% 84%, 0% 100%);
+  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 84%, 0% 100%);
+  width: 100%;
+  @media screen and (max-width: 600px) {
+   clip-path: polygon(0 8%, 100% 0%, 100% 93%, 0% 100%);
+  }
+  &__box {
+    @include sizeWrapper;
+    @include cardLayout;
+    padding: 15rem 0;
+    @media screen and (max-width: 992px) {
+      padding: 18rem 0;
+    }
+    @media screen and (max-width: 600px) {
+      padding: 20rem 0;
+      justify-content: center;
+    }
+    &--item {
+      margin: 5rem 0;
+      padding: 2rem 1rem;
+      @extend %extendTransition;
+      @include cardRadius;
+      flex: 0 0 calc(22% - 10px);
+      max-width: calc(22% - 10px);
+      background-color: $color-white;
+      text-align: center;
+      @media screen and (max-width: 1200px) {
+        flex: 0 0 calc(45% - 10px);
+        max-width: calc(45% - 10px);
+      }
+      @media screen and (max-width: 992px) {
+        margin: 3rem 0 0 0;
+      }
+      @media screen and (max-width: 600px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      &:hover {
+        box-shadow: $box-shadow-custom;
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -o-transform: translateY(-15px);
+      }
+      svg {
+        font-size: $font-size-50;
+        color: $color-dark-green;
+      }
+      .box--item-title {
+        font-size: $font-size-20;
+      }
+      .box--item-content {
+        font-size: 15px;
+        text-align: justify;
+      }
+    }
+  }
+}

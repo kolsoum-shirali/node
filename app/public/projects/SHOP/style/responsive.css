@@ -1,0 +1,308 @@
+                    @media screen and (max-width: 1400px) {
+                        .container {
+                            width: 90%;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 1200px) {
+                        #slider .item-slider .caption h1 {
+                            font-size: 30px;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 992px) {
+                        header .navbar .menu-icon {
+                            display: block;
+                            width: 5%;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        header .navbar .social {
+                            width: 80%;
+                        }
+                        header .navbar .social {
+                            justify-content: flex-end;
+                        }
+                        header .navbar .menu {
+                            display: none;
+                        }
+                        header .navbar .menu.show-menu {
+                            display: block;
+                        }
+                        header .navbar .menu.hide-menu {
+                            display: none;
+                        }
+                        header .navbar .menu>ul>li {
+                            padding: 15px 0;
+                        }
+                        main {
+                            flex-wrap: wrap;
+                        }
+                        main article {
+                            width: 100%;
+                        }
+                        main aside {
+                            width: 100%;
+                            margin-top: 10px;
+                        }
+                        #popular-products .favorite-products .popular-title h1 {
+                            font-size: 30px !important;
+                        }
+                        #suggested .discount-products h1 {
+                            font-size: 30px;
+                        }
+                        header .navbar .menu>ul {
+                            position: fixed;
+                            top: 0;
+                            right: 0;
+                            display: block;
+                            width: 300px;
+                            height: 100vh;
+                            background-color: rgb(46, 45, 45);
+                            z-index: 1000;
+                            overflow-y: scroll;
+                        }
+                        header .navbar .menu ul li ul.mega-menu {
+                            display: none;
+                            position: relative;
+                            top: 15px;
+                            transform: translateY(0px);
+                            -webkit-transform: translateY(0px);
+                            -moz-transform: translateY(0px);
+                            -ms-transform: translateY(0px);
+                            -o-transform: translateY(0px);
+                        }
+                        header .navbar .menu>ul>li:hover>ul.mega-menu {
+                            z-index: 100;
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: translateY(0px);
+                            -webkit-transform: translateY(0px);
+                            -moz-transform: translateY(0px);
+                            -ms-transform: translateY(0px);
+                            -o-transform: translateY(0px);
+                        }
+                        header .navbar .menu ul li ul.mega-menu.fade {
+                            display: block;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        header .navbar .social button {
+                            height: 90%;
+                        }
+                        #slider .item-slider .caption h1 {
+                            font-size: 25px;
+                        }
+                        #slider .item-slider .caption h3 {
+                            font-size: 14px;
+                        }
+                        header .navbar .menu>ul>li:nth-child(1) {
+                            padding: 20px;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 768px) {
+                        header .navbar .menu-icon {
+                            width: 7%;
+                        }
+                        footer .footer-top .last-news form {
+                            flex-direction: column;
+                        }
+                        footer .footer-top .last-news form input {
+                            margin-left: 0;
+                        }
+                        footer .footer-top .last-news form button {
+                            width: 50%;
+                            margin: auto;
+                            margin-top: 10px;
+                        }
+                        footer .footer-bottom .icons .wrapper-icon .img-single {
+                            width: 50%;
+                        }
+                        footer .footer-bottom .icons .wrapper-icon .img-single img {
+                            width: 100%;
+                        }
+                        #popular-products .favorite-products .popular-title h1 {
+                            font-size: 23px !important;
+                        }
+                        #popular-products .favorite-products {
+                            flex-wrap: wrap-reverse;
+                        }
+                        #popular-products .favorite-products .popular-title {
+                            width: 100%;
+                        }
+                        #popular-products .favorite-products .favorite-items {
+                            border-left: none;
+                            width: 100%;
+                            padding-top: 40px;
+                        }
+                        #suggested .discount-products h1 {
+                            font-size: 23px;
+                        }
+                        #slider .item-slider .caption h1 {
+                            font-size: 18px;
+                        }
+                        #slider .item-slider .caption h3 {
+                            font-size: 10px;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 576px) {
+                        header .navbar .menu-icon {
+                            width: 8%;
+                        }
+                        footer .footer-top .about-us {
+                            width: 100%;
+                        }
+                        footer .footer-top .social {
+                            width: 100%;
+                        }
+                        footer .footer-top .last-news {
+                            width: 100%;
+                        }
+                        footer .footer-bottom {
+                            flex-wrap: wrap;
+                        }
+                        footer .footer-bottom .services-customers {
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+                        footer .footer-bottom .quick-access {
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+                        footer .footer-bottom .icons {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        footer .footer-bottom .icons .wrapper-icon {
+                            width: 50%;
+                        }
+                        footer .footer-bottom .icons .wrapper-icon .img-single img {
+                            width: 85%;
+                        }
+                        #popular-products .favorite-products .favorite-items {
+                            flex-wrap: wrap;
+                        }
+                        #popular-products .favorite-products .favorite-items .favorite-single {
+                            width: 100%;
+                            padding: 30px;
+                        }
+                        #popular-products .favorite-products .popular-title h1 {
+                            font-size: 30px;
+                        }
+                        #suggested .discount-products .suggest-items {
+                            width: 100%;
+                            flex-wrap: wrap;
+                        }
+                        #suggested .discount-products .suggest-items .suggest-single {
+                            width: 100%;
+                        }
+                        #suggested .discount-products h1 {
+                            width: 100%;
+                            margin-top: 30px;
+                            color: white;
+                            font-size: 30px;
+                        }
+                        header .navbar .social button {
+                            display: none;
+                        }
+                        #slider .item .item-slider .caption {
+                            display: none;
+                        }
+                        article #cosmetic h1 {
+                            font-size: 20px;
+                        }
+                        main article .dresses,
+                        main article .coats,
+                        main article .best-selling-men .dress-men,
+                        main article .best-selling-boy .boy-items,
+                        #watch-men .men-watch-items,
+                        #bag-men .men-bag-items,
+                        #women-dress .women-dress-items,
+                        #girls-dress .girl-dress-items,
+                        #watch-women .women-watch-items,
+                        #bag-women .women-bag-items,
+                        aside .last-products,
+                        aside .best-selling-products,
+                        aside .sunglasses,
+                        aside .toys,
+                        aside .girl-shoes {
+                            flex-wrap: wrap;
+                        }
+                        main article .dresses .dress-item,
+                        main article .coats .coat-item,
+                        article .best-selling-men .dress-men .man-item,
+                        article .best-selling-boy .boy-items .boy-item,
+                        #watch-men .men-watch-items .men-watch-single,
+                        #bag-men .men-bag-items .men-bag-single,
+                        #women-dress .women-dress-items .woman-single,
+                        #girls-dress .girl-dress-items .girl-single,
+                        #watch-women .women-watch-items .woman-watch-single,
+                        #bag-women .women-bag-items .woman-bag-single,
+                        aside .last-products .last-product,
+                        aside .best-selling-products .best-selling-product,
+                        aside .sunglasses .single-sunglasses,
+                        aside .toys .single-toy,
+                        aside .girl-shoes .single-shoes-girl {
+                            width: 45%;
+                        }
+                        header .navbar .social ul li ul {
+                            width: 120px;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 400px) {
+                        header .navbar .menu-icon {
+                            width: 10%;
+                        }
+                        header .navbar .social ul li {
+                            padding: 15px 5px;
+                        }
+                        article #cosmetic h1 {
+                            font-size: 15px;
+                        }
+                        #bag-women .women-bag-items .woman-bag-single,
+                        main article .dresses .dress-item,
+                        main article .coats .coat-item,
+                        article .best-selling-men .dress-men .man-item,
+                        article .best-selling-boy .boy-items .boy-item,
+                        #watch-men .men-watch-items .men-watch-single,
+                        #bag-men .men-bag-items .men-bag-single,
+                        #women-dress .women-dress-items .woman-single,
+                        #girls-dress .girl-dress-items .girl-single,
+                        #watch-women .women-watch-items .woman-watch-single,
+                        aside .last-products .last-product,
+                        aside .best-selling-products .best-selling-product,
+                        aside .sunglasses .single-sunglasses,
+                        aside .toys .single-toy,
+                        aside .girl-shoes .single-shoes-girl {
+                            width: 90%;
+                        }
+                        #watch-men .watch-men-title h1,
+                        #bag-men .bag-men-title h1,
+                        #women-dress .women-title h1,
+                        #girls-dress .girl-title h1,
+                        article .best-selling-boy .title-best-boy h1,
+                        article .best-selling-men .title-best h1,
+                        #watch-women .watch-woman-title h1,
+                        #bag-women .bag-woman-title h1 {
+                            font-size: 17px;
+                        }
+                        #watch-men .watch-men-title a,
+                        #bag-men .bag-men-title a,
+                        #women-dress .women-title a,
+                        #girls-dress .girl-title a,
+                        article .best-selling-boy .title-best-boy a,
+                        article .best-selling-men .title-best a,
+                        #watch-women .watch-woman-title a,
+                        #bag-women .bag-woman-title a {
+                            font-size: 14px;
+                        }
+                        header .navbar .social ul li ul {
+                            width: 112px;
+                        }
+                    }

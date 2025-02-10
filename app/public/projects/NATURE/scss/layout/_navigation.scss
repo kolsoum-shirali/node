@@ -1,0 +1,38 @@
+.btn--menu {
+  width: 100%;
+  height: 100%;
+  background-color: $color-white;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  box-shadow: 0 5rem 3rem rgba(0, 0, 0, 0);
+  div {
+    position: relative;
+    background-color: #000;
+    width: 60%;
+    height: 0.3rem;
+    margin: auto;
+    &::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 0.3rem;
+      top: -0.8rem;
+      background-color: $color-black;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 0.3rem;
+      top: 0.8rem;
+      background-color: $color-black;
+    }
+  }
+}

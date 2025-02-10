@@ -1,0 +1,278 @@
+@media screen and (max-width:1400px) {
+    .container {
+        width: 90%;
+    }
+    #our-story .story-title h1 {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #our-story {
+        text-align: center;
+    }
+    #our-story .story-title p {
+        width: 100%;
+        font-size: 18px;
+    }
+    #our-story .story-title h1 {
+        margin-top: 0px;
+        width: 100%;
+    }
+    #our-story .story-img {
+        width: 100%;
+    }
+    #our-story .story-img img {
+        width: 60%;
+        height: 60%;
+    }
+    #our-story .story-title {
+        width: 100%;
+    }
+    #menu .menu-title {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    header nav ul {
+        display: none;
+    }
+    .menu-nav {
+        display: block;
+        float: right;
+    }
+    header nav .logo {
+        float: left;
+    }
+    header .overlay .header-title h1 {
+        font-size: 30px;
+    }
+    header .overlay .header-title h3 {
+        font-size: 20px;
+    }
+    #our-story .story-title p {
+        font-size: 16px;
+    }
+    #our-story .story-title h1 {
+        font-size: 25px;
+    }
+    #sweet .sweet-title h1 {
+        font-size: 30px;
+    }
+    #sweet .sweet-title p {
+        font-size: 15px;
+        width: 80%;
+        margin: auto;
+    }
+    #menu {
+        padding: 50px 0;
+    }
+    #menu .menu-title {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #menu .menu-title h1 {
+        font-size: 25px;
+    }
+    #menu .menu-title p {
+        font-size: 15px;
+    }
+    #menu .menu-title a {
+        font-size: 11px;
+    }
+    #menu .menu-image {
+        width: 100%;
+        text-align: center;
+    }
+    #menu .menu-image ul li {
+        width: 25%;
+        float: right;
+    }
+    #hot .hot-title h1 {
+        font-size: 40px;
+    }
+    #hot .hot-title h2 {
+        font-size: 20px;
+    }
+    #delight {
+        padding: 50px 0;
+    }
+    #delight .delight-title {
+        width: 100%;
+    }
+    #delight .delight-title h1 {
+        font-size: 29px;
+    }
+    #delight .delight-title p {
+        font-size: 15px;
+    }
+    #delight .delight-img {
+        width: 100%;
+        text-align: center;
+    }
+    #footer .footer .about-us h3 {
+        font-size: 18px;
+    }
+    #footer .footer .about-us p {
+        font-size: 13px;
+        width: 70%;
+    }
+    #footer .footer .contact-us .news-latter h3 {
+        font-size: 15px;
+    }
+    #footer .footer .contact-us .social h3 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #our-story .story-title p {
+        font-size: 14px;
+    }
+    #our-story .story-title h1 {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header {
+        height: 70vh;
+    }
+    header .overlay .header-title h1 {
+        font-size: 25px;
+    }
+    header .overlay .header-title h3 {
+        font-size: 15px;
+    }
+    #our-story {
+        padding: 30px 0;
+    }
+    #our-story .story-img img {
+        width: 100%;
+        height: 100%;
+    }
+    #sweet {
+        height: 200px;
+    }
+    #sweet .sweet-title {
+        margin-top: 110px;
+    }
+    #sweet .sweet-title h1 {
+        font-size: 25px;
+    }
+    #sweet .sweet-title p {
+        font-size: 13px;
+    }
+    #menu .menu-title h1 {
+        font-size: 24px;
+    }
+    #menu .menu-title p {
+        font-size: 14px;
+    }
+    #menu .menu-image ul li {
+        width: 50%;
+        float: right;
+    }
+    #hot {
+        height: 200px;
+    }
+    #hot .hot-title h1 {
+        font-size: 33px;
+    }
+    #hot .hot-title h2 {
+        font-size: 17px;
+    }
+    #delight .delight-img {
+        text-align: center;
+    }
+    #delight .delight-img img {
+        width: 60%;
+        height: 350px;
+    }
+    #delight .delight-title h1 {
+        font-size: 25px;
+    }
+    #delight .delight-title p {
+        font-size: 13px;
+    }
+    #delight .delight-img img.delighttwo {
+        margin-right: 0px;
+    }
+    #footer .footer .contact-us .news-latter {
+        width: 100%;
+        padding: 25px 0;
+    }
+    #footer .footer .contact-us .social {
+        width: 100%;
+        padding: 25px 0;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header .overlay .header-title h1 {
+        font-size: 20px;
+    }
+    header .overlay .header-title h3 {
+        width: 80%;
+        font-size: 14px;
+        line-height: 2;
+        margin: auto;
+    }
+    #our-story .story-title p {
+        font-size: 11px;
+    }
+    #our-story .story-title h1 {
+        font-size: 18px;
+    }
+    #sweet {
+        height: 130px;
+    }
+    #sweet .sweet-title {
+        margin-top: 90px;
+    }
+    #sweet .sweet-title h1 {
+        font-size: 20px;
+    }
+    #sweet .sweet-title p {
+        font-size: 11px;
+    }
+    #menu .menu-title h1 {
+        font-size: 21px;
+    }
+    #menu .menu-title p {
+        font-size: 12px;
+    }
+    #menu .menu-image ul li {
+        width: 100%;
+        float: right;
+    }
+    #hot {
+        height: 130px;
+    }
+    #hot .hot-title h1 {
+        font-size: 30px;
+    }
+    #hot .hot-title h2 {
+        font-size: 14px;
+    }
+    #delight .delight-title h1 {
+        font-size: 23px;
+    }
+    #delight .delight-title p {
+        font-size: 13px;
+    }
+    #delight .delight-img img {
+        width: 80%;
+        height: 350px;
+    }
+    header nav .menu-nav img {
+        margin-top: 20px;
+        width: 45px;
+    }
+    header nav .logo img {
+        width: 60px;
+        height: 80px;
+    }
+}

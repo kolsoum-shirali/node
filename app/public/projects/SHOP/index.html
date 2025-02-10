@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+</head>
+
+<body>
+       <div class="preloader">
+        <img src="images/preloader.gif" alt="">
+    </div>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="menu">
+                    <ul>
+                        <div class="close-menu">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <li>
+                            <a href="#">خانه <i class="fas fa-home"></i></a>
+                        </li>
+                        <li id="dropdown">
+                            <a href="#">محصولات <i class="fas fa-shopping-cart"></i></a>
+                            <ul class="mega-menu">
+                                <li>
+                                    <h2>زنانه</h2>
+                                    <ul>
+                                        <li><a href="">کت و شلوار</a></li>
+                                        <li><a href="">لباس مجلسی</a></li>
+                                        <li><a href="">عینک های برند</a></li>
+                                        <li><a href="">عطرهای محبوب</a></li>
+                                        <li><a href=""> کیف </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>مردانه</h2>
+                                    <ul>
+                                        <li><a href="">کت و شلوار</a></li>
+                                        <li><a href="">لباس مجلسی</a></li>
+                                        <li><a href="">عینک های برند</a></li>
+                                        <li><a href="">عطرهای محبوب</a></li>
+                                        <li><a href=""> کیف </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>بچگانه</h2>
+                                    <ul>
+                                        <li><a href="">کت و شلوار</a></li>
+                                        <li><a href="">لباس مجلسی</a></li>
+                                        <li><a href="">عینک های برند</a></li>
+                                        <li><a href="">عطرهای محبوب</a></li>
+                                        <li><a href=""> کیف </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="images/6.jpg" alt="" />
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">سبد خرید <i class="fas fa-credit-card"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">آخرین مطالب <i class="fas fa-blog"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">درباره ما <i class="fas fa-address-card"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">تماس با ما <i class="fas fa-mobile-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-icon">
+                    <div></div>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-user"></i></a>
+                            <ul>
+                                <li><a href="">ثبت نام</a></li>
+                                <li><a href="">ورود</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+                    <button>  سبد سفارش شما</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container">
+            <div class="banner">
+                <div class="img-banner">
+                    <img src="images/nav-banner.png" alt="" />
+                </div>              
+            </div>
+        </div>
+    </section>
+
+    <section id="slider">
+        <div class="item">
+            <div style="background-image: url('images/slider1.jpg')" class="item-slider active">
+                <div class="caption">
+                    <h1>از اینجا دست خالی بیرون نمیری</h1>
+                    <h3>اینجا همه چیز هست و تو نمیتونی دست خالی بیرون بری.</h3>
+                </div>
+            </div>
+            <div style="background-image: url('images/slider2.jpg')" class="item-slider">
+                <div class="caption">
+                    <h1>شیک پوشی و خاص بودن را با ما تجربه کنید</h1>
+                </div>
+            </div>
+            <div style="background-image: url('images/slider3.jpg')" class="item-slider">
+                <div class="caption">
+                    <h1>استایل های روز را با ما تجربه کنید</h1>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="next"><i class="fas fa-chevron-right"></i></div>
+            <div class="prev"><i class="fas fa-chevron-left"></i></div>
+        </div>
+        <div class="proggress"></div>
+    </section>
+    <main id="content">
+        <article>
+            <div class="dresses">
+                <div class="dress-item">
+                    <img src="images/product/1.jpg" alt="" />
+                    <a onclick="showSingle(this)" class="dress-info" href="last-product-html/single.html">
+                        <h3> لباس مجلسی آستین گیپور</h3>
+                        <h4>650,000 <span>تومان</span></h4>
+                    </a>
+                </div>
+                <div class="dress-item">
+                    <img src="images/product/2.jpg" alt="" />
+                    <a onclick="showSingle(this)" href="last-product-html/single.html">
+                        <h3>لباس مجلسی آستین فانوسی</h3>
+                        <h4>350,000 <span>تومان</span></h4>
+                    </a>
+                </div>
+                <div class="dress-item">
+                    <img src="images/product/3.png" alt="" />
+                    <a onclick="showSingle(this)" href="last-product-html/single.html">
+                        <h3>لباس مجلسی گیپوروحریر</h3>
+                        <h4>780,000 <span>تومان</span></h3>
+                    </a>
+                </div>
+                <div class="dress-item">
+                    <img src="images/product/4.jpg" alt="" />
+                    <a onclick="showSingle(this)" href="last-product-html/single.html">
+                        <h3>لباس مجلسی ترک ماهی</h3>
+                        <h4>550,000 <span>تومان</span></h4>
+                    </a>
+                </div>
+            </div>
+            <div class="coats">
+                <div class="coat-item">
+                    <img src="images/product/coat/coat1.jpg" alt="" />
+                    <a onclick="showSingle(this)" href="last-product-html/single.html">
+                        <h3> کت و شلوار</h3>
+                        <h4>650,000 <span>تومان</span></h4>
+                    </a>
+                </div>
+                <div class="coat-item">
+                    <img src="images/product/coat/coat10.jpg" alt="" />
+                    <a onclick="showSingle(this)" href="last-product-html/single.html">
+                        <h3> کت و شلوار</h3>
+                        <h4>350,000 <span>تومان</span></h4>
+                    </a>
+                </div>
+                <div class="coat-item">
+                    <img src="images/product/coat/coat6.jpg" alt="" />
+                    <a onclick="showSingle(this)" href="last-product-html/single.html">
+                        <h3> کت و شلوار</h3>
+                        <h4>780,000 <span>تومان</span></h3>
+                    </a>
+                </div>
+                <div class="coat-item">
+                    <img src="images/product/coat/coat9.jpg" alt="" />
+                    <a onclick="showSingle(this)" href="last-product-html/single.html">
+                        <h3> کت و شلوار</h3>
+                        <h4>550,000 <span>تومان</span></h4>
+                    </a>
+                </div>
+            </div>
+
+            <div class="best-selling-men">
+                <div class="title-best">
+                    <h1>پر فروش ترین مردانه</h1>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="dress-men">
+                    <div class="man-item">
+                        <img src="images/product/men/1.jpg" alt="pic">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4> پیراهن طرح دار آبی </h4>
+                            <h4>200,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="man-item">
+                        <img src="images/product/men/2.jpg" alt="pic">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>پیراهن چهارخونه </h4>
+                            <h4>500,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="man-item">
+                        <img src="images/product/men/3.jpg" alt="pic">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>پیراهن ساده </h4>
+                            <h4>800,000 <span>تومان</span></h4>
+                    </div>
+                    </a>
+                    <div class="man-item">
+                        <img src="images/product/men/4.jpg" alt="pic">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>پیراهن چهارخونه </h4>
+                            <h4>350,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="best-selling-boy">
+                <div class="title-best-boy">
+                    <h1>پر فروش ترین پسرانه</h1>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="boy-items">
+                    <div class="boy-item">
+                        <img src="images/product/boy/boy6.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4> پیراهن </h4>
+                            <h4>200,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="boy-item">
+                        <img src="images/product/boy/boy2.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>پیراهن </h4>
+                            <h4>500,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="boy-item">
+                        <img src="images/product/boy/boy8.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>پیراهن </h4>
+                            <h4>800,000 <span>تومان</span></h4>
+                    </div>
+                    </a>
+                    <div class="boy-item">
+                        <img src="images/product/boy/boy9.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>پیراهن </h4>
+                            <h4>350,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="watch-men">
+                <div class="watch-men-title">
+                    <h1>پر فروش ترین ساعت مردانه</h1>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="men-watch-items">
+                    <div class="men-watch-single">
+                        <img src="images/product/watch-man/watch2.png" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>ساعت</h4>
+                            <h4>350,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="men-watch-single">
+                        <img src="images/product/watch-man/watch3.png" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>ساعت</h4>
+                            <h4>650,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="men-watch-single">
+                        <img src="images/product/watch-man/watch6.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>ساعت</h4>
+                            <h4>450,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="men-watch-single">
+                        <img src="images/product/watch-man/watch7.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>ساعت</h4>
+                            <h4>300,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="bag-men">
+                <div class="bag-men-title">
+                    <h1>پر فروش ترین کیف مردانه</h1>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="men-bag-items">
+                    <div class="men-bag-single">
+                        <img src="images/product/wallet-man/wallet3.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>کیف</h4>
+                            <h4>350,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="men-bag-single">
+                        <img src="images/product/wallet-man/wallet6.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>کیف</h4>
+                            <h4>650,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="men-bag-single">
+                        <img src="images/product/wallet-man/wallet7.jpeg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>کیف</h4>
+                            <h4>450,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="men-bag-single">
+                        <img src="images/product/wallet-man/wallet8.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>کیف</h4>
+                            <h4>300,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="cosmetic">
+                <a href=""> <img src="images/product/Cosmetics.jpg" alt="">
+                    <h1>آرایشی و بهداشتی</h1>
+                </a>
+            </div>
+            <div id="women-dress">
+                <div class="women-title">
+                    <h1>پر فروش ترین زنانه</h1>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="women-dress-items">
+                    <div class="woman-single">
+                        <img src="images/product/girl/girl1.png" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>مجلسی یقه قایقی</h4>
+                            <h4>850,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="woman-single">
+                        <img src="images/product/girl/girl10.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>مجلسی ترک-آستین فانوسی</h4>
+                            <h4>750,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="woman-single">
+                        <img src="images/product/girl/girl2.png" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>مجلسی کوتاه</h4>
+                            <h4>650,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="woman-single">
+                        <img src="images/product/girl/girl6.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>مجلسی کت و دامن</h4>
+                            <h4>350,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="girls-dress">
+                <div class="girl-title">
+                    <h1>پر فروش ترین دخترانه</h1>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="girl-dress-items">
+                    <div class="girl-single">
+                        <img src="images/product/daughter/child7.jpeg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>مجلسی یقه خشتی</h4>
+                            <h4>350,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="girl-single">
+                        <img src="images/product/daughter/child3.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>مجلسی تمام کلوش</h4>
+                            <h4>650,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="girl-single">
+                        <img src="images/product/daughter/child5.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>مجلسی بلند حریر</h4>
+                            <h4>450,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="girl-single">
+                        <img src="images/product/daughter/child8.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>مجلسی نیم کلوش</h4>
+                            <h4>300,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="watch-women">
+                <div class="watch-woman-title">
+                    <h1>پر فروش ترین ساعت زنانه</h1>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="women-watch-items">
+                    <div class="woman-watch-single">
+                        <img src="images/product/watch-woman/watch4.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>ساعت</h4>
+                            <h4>350,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="woman-watch-single">
+                        <img src="images/product/watch-woman/watch6.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>ساعت</h4>
+                            <h4>650,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="woman-watch-single">
+                        <img src="images/product/watch-woman/watch8.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>ساعت</h4>
+                            <h4>450,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="woman-watch-single">
+                        <img src="images/product/watch-woman/watch9.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>ساعت</h4>
+                            <h4>300,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="bag-women">
+                <div class="bag-woman-title">
+                    <h1>پر فروش ترین کیف زنانه</h1>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="women-bag-items">
+                    <div class="woman-bag-single">
+                        <img src="images/product/bag-woman/bag1.png" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>کیف</h4>
+                            <h4>350,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="woman-bag-single">
+                        <img src="images/product/bag-woman/bag2.png" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>کیف</h4>
+                            <h4>650,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="woman-bag-single">
+                        <img src="images/product/bag-woman/bag3.png" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>کیف</h4>
+                            <h4>450,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                    <div class="woman-bag-single">
+                        <img src="images/product/bag-woman/bag6.jpg" alt="">
+                        <a onclick="showSingle(this)" href="last-product-html/single.html">
+                            <h4>کیف</h4>
+                            <h4>300,000 <span>تومان</span></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <div>
+                <h3>آخرین محصولات</h3>
+                <div class="last-products">
+                    <div class="last-product">
+                       <img src="images/product/shoes/1.jpg" alt="" >
+                        <h5>کفش</h5>
+                    </div>
+                    <div class="last-product">
+                        <img src="images/product/shoes/2.jpeg" alt="">
+                        <h5>کفش</h5>
+                    </div>
+                    <div class="last-product">
+                        <img src="images/product/shoes/3.jpg" alt="">
+                        <h5>کفش</h5>
+                    </div>
+                    <div class="last-product">
+                        <img src="images/product/shoes/4.jpg" alt="">
+                        <h5>کفش</h5>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>محصولات پرفروش اخیر</h3>
+                <div class="best-selling-products">
+                    <div class="best-selling-product">
+                        <img src="images/product/bestsellers/perfume3.png" alt="">
+                        <h5>ادکلن</h5>
+                    </div>
+                    <div class="best-selling-product">
+                        <img src="images/product/bestsellers/perfume4.png" alt="">
+                        <h5>ادکلن</h5>
+                    </div>
+                    <div class="best-selling-product">
+                        <img src="images/product/bestsellers/perfume7.jpg" alt="">
+                        <h5>ادکلن</h5>
+                    </div>
+                    <div class="best-selling-product">
+                        <img src="images/product/bestsellers/perfume8.jpg" alt="">
+                        <h5>ادکلن</h5>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>عینک آفتابی</h3>
+                <div class="sunglasses">
+                    <div class="single-sunglasses">
+                        <img src="images/product/sunglasses/sunglasses10.jpg" alt="">
+                        <h5>عینک</h5>
+                    </div>
+                    <div class="single-sunglasses">
+                        <img src="images/product/sunglasses/sunglasses4.png" alt="">
+                        <h5>عینک</h5>
+                    </div>
+                    <div class="single-sunglasses">
+                        <img src="images/product/sunglasses/sunglasses5.png" alt="">
+                        <h5>عینک</h5>
+                    </div>
+                    <div class="single-sunglasses">
+                        <img src="images/product/sunglasses/sunglasses9.jpg" alt="">
+                        <h5>عینک</h5>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>اسباب بازی</h3>
+                <div class="toys">
+                    <div class="single-toy">
+                        <img src="images/product/toy/toy1.png" alt="">
+                        <h5>عروسک</h5>
+                    </div>
+                    <div class="single-toy">
+                        <img src="images/product/toy/toy6.jpg" alt="">
+                        <h5>عروسک</h5>
+                    </div>
+                    <div class="single-toy">
+                        <img src="images/product/toy/toy7.jpg" alt="">
+                        <h5>عروسک</h5>
+                    </div>
+                    <div class="single-toy">
+                        <img src="images/product/toy/toy9.jpg" alt="">
+                        <h5>عروسک</h5>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>کفش های دخترانه</h3>
+                <div class="girl-shoes">
+                    <div class="single-shoes-girl">
+                        <img src="images/product/shoes-girl/shoes1.jpg" alt="">
+                        <h5>کفش</h5>
+                    </div>
+                    <div class="single-shoes-girl">
+                        <img src="images/product/shoes-girl/shoes10.jpg" alt="">
+                        <h5>کفش</h5>
+                    </div>
+                    <div class="single-shoes-girl">
+                        <img src="images/product/shoes-girl/shoes2.jpg" alt="">
+                        <h5>کفش</h5>
+                    </div>
+                    <div class="single-shoes-girl">
+                        <img src="images/product/shoes-girl/shoes4.jpg" alt="">
+                        <h5>کفش</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <a href="">
+                    <img src="images/product/banner-ads.jpg" alt="">
+                </a>
+            </div>
+        </aside>
+    </main>
+    <section id="suggested">
+        <div class="container">
+            <div class="discount-products">
+                <h1>تخفیف های فوق العاده </h1>
+                <div class="suggest-items">
+                    <div class="suggest-single">
+                        <button>فقط امروز</button>
+                        <img src="images/product/discount-Product/1.jpg" alt="">
+                        <div class="single-info">
+                            <div class="price">
+                                <h3>کفش</h3>
+                                <h3>620,000</h3>
+                            </div>
+                            <h3>500,000 <span>تومان</span></h3>
+                        </div>
+                    </div>
+                    <div class="suggest-single">
+                        <button>فقط امروز</button>
+                        <img src="images/product/discount-Product/2.jpg" alt="">
+                        <div class="single-info">
+                            <div class="price">
+                                <h3>ساعت</h3>
+                                <h3>800,000</h3>
+                            </div>
+                            <h3>750,000 <span>تومان</span></h3>
+                        </div>
+                    </div>
+                    <div class="suggest-single">
+                        <button>فقط امروز</button>
+                        <img src="images/product/discount-Product/sunglasses6.jpg" alt="">
+                        <div class="single-info">
+                            <div class="price">
+                                <h3>عینک</h3>
+                                <h3>590,000</h3>
+                            </div>
+                            <h3>500,000 <span>تومان</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popular-products">
+        <div class="container">
+            <div class="favorite-products">
+                <div class="favorite-items">
+                    <div class="favorite-single">
+                        <img src="images/product/favorites/3.jpg" alt="">
+                        <div class="favorite-info">
+                            <div class="single-info">
+                                <i class="fas fa-eye"></i>
+                                <h5>120,000 <span>بازدید</span></h5>
+                            </div>
+                            <div class="rate-love">
+                                <h5>300 <span><i class="fas fa-heart"></i></span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="favorite-single">
+                        <img src="images/product/favorites/coat2.png" alt="">
+                        <div class="favorite-info">
+                            <div class="single-info">
+                                <i class="fas fa-eye"></i>
+                                <h5>120,000 <span>بازدید</span></h5>
+                            </div>
+                            <div class="rate-love">
+                                <h5>250 <span><i class="fas fa-heart"></i></span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="favorite-single">
+                        <img src="images/product/favorites/child9.jpg" alt="">
+                        <div class="favorite-info">
+                            <div class="single-info">
+                                <i class="fas fa-eye"></i>
+                                <h5>120,000 <span>بازدید</span></h5>
+                            </div>
+                            <div class="rate-love">
+                                <h5>285 <span><i class="fas fa-heart"></i></span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-title">
+                    <h1>محبوب ترین محصولات</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="about-us">
+                    <h3>درباره ما</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                        کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته</p>
+                </div>
+                <div class="social">
+                    <h3>دنبال کنید</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="last-news">
+                    <h3>دریافت آخرین اخبار</h3>
+                    <form>
+                        <input type="text" placeholder="ایمیل خود راوارد کنید...">
+                        <button>عضویت</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="services-customers">
+                    <ul>
+                        <li><a href="#">خدمات مشتریان</a></li>
+                        <li><a href="#">پرسش های متداول</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                        <li><a href="#">گارانتی بازگشت وجه</a></li>
+                        <li><a href="#">شرایط استفاده</a></li>
+                    </ul>
+                </div>
+                <div class="quick-access">
+                    <ul>
+                        <li><a href="#">دسترسی سریع</a></li>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">فروش</a></li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <div class="wrapper-icon">
+                        <div class="img-single">
+                            <img src="images/f1.png" alt="">
+                        </div>
+                        <div class="img-single">
+                            <img src="images/f2.png" alt="">
+                        </div>
+                        <div class="img-single">
+                            <img src="images/f3.png" alt="">
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/app.js"></script>
+        <script src="js/script.js"></script>
+    <script src="js/single-product.js"></script>
+
+</body>
+
+</html>

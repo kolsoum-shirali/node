@@ -1,0 +1,51 @@
+@media screen and (max-width: 1200px) {
+  .main aside .side-bar .info-person {
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main {
+    .main-content .rates .single-rate {
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+    main {
+      width: 100%;
+      right: 0;
+    }
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    .main-content {
+      .income {
+        display: block;
+        .admin-income {
+          width: 100%;
+        }
+        .income-table {
+          width: 100%;
+          table {
+            width: 100%;
+          }
+        }
+      }
+      .rates {
+        .single-rate {
+          flex: 0 0 calc(100% - 20px);
+          max-width: calc(100% - 20px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main main .main-header {
+    display: block;
+  }
+}

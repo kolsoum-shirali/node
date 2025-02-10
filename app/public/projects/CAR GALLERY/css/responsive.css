@@ -1,0 +1,128 @@
+@media screen and (max-width: 1200px) {
+    .fp-controlArrow.fp-prev {
+        left: 130px !important;
+    }
+    .fp-controlArrow.fp-next {
+        right: 70% !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .car1 h1 {
+        font-size: 35px;
+    }
+    .car1 h1 a {
+        font-size: 35px;
+    }
+    #fullpage .car2 .services ul li {
+        width: 100%;
+    }
+    #fullpage .car3 .products ul li {
+        width: 100%;
+    }
+    #fullpage .car4 .contact-us form input {
+        width: 50%;
+    }
+    #fullpage .car4 .contact-us form textarea {
+        width: 50%;
+    }
+    #fullpage .car3 .products ul li a img {
+        height: 160px;
+    }
+    #fullpage .car2 .services ul li a svg {
+        width: 25%;
+        height: 15%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fp-controlArrow.fp-prev {
+        left: 100px !important;
+    }
+    .fp-controlArrow.fp-next {
+        right: 50% !important;
+    }
+    #fullpage .car5 footer .about-us {
+        padding: 0;
+    }
+    #fullpage .car5 footer .last-car {
+        padding: 0;
+    }
+    #fullpage .car5 footer .last-car .img-cars img {
+        width: 50%;
+        margin: 0;
+    }
+    #fullpage .car5 footer .last-car h2 {
+        padding: 15px 0;
+    }
+    #fullpage .car5 footer .copy-right h4 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    #fullpage .car4 .contact-us h1 {
+        font-size: 35px;
+    }
+    .car1 ul li {
+        font-size: 12px;
+    }
+    #fullpage .car3 .products h1 {
+        font-size: 35px;
+    }
+    #fullpage .car3 .products h1 span {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .car1 h1 {
+        font-size: 27px;
+    }
+    .car1 h1 a {
+        font-size: 27px;
+    }
+    #fullpage .car2 .services ul {
+        width: 80%;
+    }
+    #fullpage .car3 .products ul {
+        width: 80%;
+    }
+    #fullpage .car4 .contact-us form input {
+        width: 70%;
+    }
+    #fullpage .car4 .contact-us form textarea {
+        width: 70%;
+    }
+    .car1 ul li {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .car1 h1 {
+        font-size: 20px;
+    }
+    .car1 h1 a {
+        font-size: 20px;
+    }
+    .fp-controlArrow.fp-prev {
+        left: 85px !important;
+    }
+    .fp-controlArrow.fp-next {
+        right: 40% !important;
+    }
+    #fullpage .car5 footer .last-car .img-cars img {
+        height: 120px;
+    }
+    #fullpage .car4 .contact-us form input {
+        width: 85%;
+    }
+    #fullpage .car4 .contact-us form textarea {
+        width: 85%;
+    }
+    #fullpage .car4 .contact-us h1 {
+        font-size: 25px;
+    }
+    .car1 ul {
+        display: none;
+    }
+}

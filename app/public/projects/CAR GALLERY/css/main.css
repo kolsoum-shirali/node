@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'), url('../fonts/vazir.ttf') format('ttf'), url('../fonts/vazir.woff')
+}
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+#fullpage {
+    position: relative;
+}
+
+.car1 {
+    background: url('../images/1.jpg');
+    background-size: cover;
+}
+
+.car2 {
+    background: url('../images/2.jpg');
+    background-size: cover;
+}
+
+.car3 {
+    background: url('../images/3.jpg');
+    background-size: cover;
+}
+
+.car4 {
+    background: url('../images/4.jpg');
+    background-size: cover;
+}
+
+.car5 {
+    background-color: black;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #fff !important;
+}
+
+#fp-nav ul li a.active span {
+    background-color: #c00 !important;
+}
+
+.car1 ul {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.car1 ul li {
+    padding: 20px;
+}
+
+.car1 ul li a {
+    color: #fff;
+}
+
+.car1 h1 {
+    width: 90%;
+    color: #fff;
+    font-size: 50px;
+    margin-top: -200px;
+    text-align: left;
+}
+
+.car1 h1 a {
+    font-size: 50px;
+    color: rgb(224, 148, 6);
+}
+
+.fp-controlArrow.fp-prev {
+    top: 70%;
+    border-width: 20px 34px 25.5px 0 !important;
+}
+
+.fp-controlArrow.fp-next {
+    top: 70%;
+    right: 92% !important;
+    border-width: 20px 0 23.5px 36px !important;
+}
+
+#fullpage .car2 .services ul {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fullpage .car2 .services ul li {
+    background-color: rgba(247, 242, 242, 0.8);
+    width: 40%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin: 10px;
+}
+
+#fullpage .car2 .services ul li a svg {
+    width: 40%;
+    height: 30%;
+    color: black;
+}
+
+#fullpage .car2 .services ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#fullpage .car2 .services ul li a h4 {
+    color: black;
+}
+
+#fullpage .car2 .services h1 {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+    font-size: 50px;
+}
+
+#fullpage .car2 .services h1 span {
+    color: red;
+    font-size: 50px;
+}
+
+
+/* products */
+
+#fullpage .car3 .products ul {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fullpage .car3 .products ul li {
+    background-color: rgba(247, 242, 242, 0.8);
+    width: 40%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin: 10px;
+}
+
+#fullpage .car3 .products ul li a img {
+    width: 90%;
+    height: 250px;
+}
+
+#fullpage .car3 .products ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#fullpage .car3 .products ul li a h4 {
+    color: black !important;
+    padding-top: 10px;
+}
+
+#fullpage .car3 .products h1 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 50px;
+}
+
+#fullpage .car3 .products h1 span {
+    color: red;
+    font-size: 50px;
+}
+
+#fullpage .car4 .contact-us form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fullpage .car4 .contact-us form input {
+    font-family: 'vazir';
+    width: 25%;
+    padding: 15px 0;
+    margin: 5px 0;
+    font-size: 18px;
+    border: 3px solid gray;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    padding: 10px;
+}
+
+#fullpage .car4 .contact-us form textarea {
+    font-family: 'vazir';
+    width: 25%;
+    padding: 35px 0;
+    margin: 5px 0;
+    font-size: 18px;
+    border: 3px solid gray;
+    background-color: rgba(0, 0, 0, .8);
+    height: 200px;
+    color: #fff;
+    padding: 10px;
+}
+
+#fullpage .car4 .contact-us form input#submit {
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#fullpage .car4 .contact-us form input#submit:hover {
+    background-color: rgb(184, 7, 7);
+}
+
+#fullpage .car4 .contact-us h1 {
+    font-size: 50px;
+    margin-right: 60px;
+    color: #fff;
+}
+
+#fullpage .car4 .contact-us h1 span {
+    color: #c00;
+}
+
+
+/* footer */
+
+#fullpage .car5 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+#fullpage .car5 footer .about-us {
+    color: #fff;
+    padding: 30px 0;
+}
+
+#fullpage .car5 footer .about-us h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+#fullpage .car5 footer .about-us p {
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+}
+
+#fullpage .car5 footer .last-car {
+    padding: 50px 0;
+}
+
+#fullpage .car5 footer .last-car h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#fullpage .car5 footer .last-car .img-cars {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fullpage .car5 footer .last-car .img-cars img {
+    width: 25%;
+    height: 150px;
+    margin: 15px 0;
+}
+
+#fullpage .car5 footer .copy-right {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+#fullpage .car5 footer .copy-right .social ul {
+    display: flex;
+    justify-content: center;
+}
+
+#fullpage .car5 footer .copy-right .social ul li {
+    padding: 15px 10px;
+}
+
+#fullpage .car5 footer .copy-right .social ul li a svg {
+    color: #fff;
+}
+
+#fullpage .car5 footer .copy-right .social ul li a:hover svg {
+    color: #c00;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}

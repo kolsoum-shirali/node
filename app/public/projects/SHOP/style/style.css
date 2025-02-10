@@ -1,0 +1,2098 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/Yekan.eot') format('eot'), url('../fonts/Yekan.ttf') format('ttf'), url('../fonts/Yekan.woff') format('woff'), url('../fonts/Yekan.woff2') format('woff2')
+}
+
+body {
+    font-family: 'vazir';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none !important;
+}
+button {
+    font-family: 'vazir';
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+}
+
+
+/* header */
+
+header {
+    background-color: black;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar .menu {
+    width: 60%;
+}
+
+header .navbar .menu ul .close-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+header .navbar .menu ul .close-menu svg {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+header .navbar .menu-icon {
+    display: none;
+}
+
+header .navbar .menu-icon div {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: relative;
+}
+
+header .navbar .menu-icon div::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    background-color: white;
+}
+
+header .navbar .menu-icon div::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    background-color: white;
+}
+
+header .navbar .menu>ul {
+    display: flex;
+}
+
+header .navbar .menu>ul>li {
+    padding: 20px 15px;
+}
+
+header .navbar .menu>ul>li>a:hover>svg {
+    color: #c00;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+header .navbar .menu>ul>li>a {
+    color: white;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+header .navbar .menu>ul>li:hover>a {
+    color: #c00;
+}
+
+header .navbar .menu>ul>li>a>svg {
+    font-size: 25px;
+    color: white;
+    display: block;
+    padding: 5px 0;
+}
+
+header .navbar .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+header .navbar .social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navbar .social ul li {
+    padding: 15px;
+    position: relative;
+}
+
+header .navbar .social ul li ul {
+    position: absolute;
+    width: 220px;
+    top: 100%;
+    left: 0;
+    transform: translateX(-40%);
+    display: flex;
+    border-top: 2px solid rgb(95, 94, 94);
+    background-color: black;
+    -webkit-transform: translateX(-40%);
+    -moz-transform: translateX(-40%);
+    -ms-transform: translateX(-40%);
+    -o-transform: translateX(-40%);
+    display: none;
+    z-index: 100;
+}
+
+header .navbar .social ul li ul li {
+    padding: 15px 30px;
+}
+
+header .navbar .social ul li ul li a {
+    color: white;
+}
+
+header .navbar .social ul li a svg {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+header .navbar .social ul li a:hover svg {
+    color: #c00;
+}
+
+header .navbar .social ul li:hover ul {
+    display: block;
+}
+
+header .navbar .social ul li ul li:hover {
+    width: 160px;
+    background-color: #c2bcbc;
+    cursor: pointer;
+}
+
+header .navbar .social ul li ul li:hover a {
+    color: black;
+}
+
+header .navbar .social button {
+    border: none;
+    height: 50%;
+    width: 150px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #c00;
+    background: linear-gradient(to left bottom, #cc0000 50%, #b80000 50%);
+}
+
+header .navbar .social button:hover {
+    background: linear-gradient(to left bottom, #ccc7c7 50%, #929292 50%);
+    color: black;
+}
+
+header .navbar .menu>ul>li:nth-child(1) {
+    padding: 20px 0 20px 20px;
+}
+
+
+/* mega-menu */
+
+header .navbar .menu>ul>li:hover>ul.mega-menu {
+    z-index: 100;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+
+header .navbar .menu ul li ul.mega-menu {
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+}
+
+header .navbar .menu ul li ul.mega-menu li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+header .navbar .menu ul li ul.mega-menu li ul {
+    width: 100%;
+}
+
+header .navbar .menu ul li ul.mega-menu li img {
+    width: 100%;
+    height: 100%;
+}
+
+header .navbar .menu ul li ul.mega-menu li h2 {
+    border-bottom: 2px solid #fff;
+    font-size: 18px;
+    padding: 17px 0;
+    margin: 10px 0;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+}
+
+header .navbar .menu ul li ul.mega-menu li ul li a {
+    padding: 10px 0;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+header .navbar .menu ul li ul.mega-menu li ul li {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+header .navbar .menu ul li ul.mega-menu li ul li:hover {
+    background-color: rgba(252, 243, 243, 0.137);
+}
+
+
+/* banner */
+
+#banner {
+    background-color: #1a1818;
+}
+
+#banner .banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#banner .banner .img-banner {
+    width: 60%;
+}
+
+#banner .banner .img-banner img {
+    padding: 10px 0;
+    width: 100%;
+}
+
+#banner .banner .logo {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 15vh;
+}
+
+#banner .banner .logo img {
+    height: 70%;
+}
+
+
+/* slider */
+
+#slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider .item .item-slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: left;
+    height: 73vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: zoom 1s linear forwards;
+    -webkit-animation: zoom 1s linear forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        -o-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+}
+
+#slider .item .item-slider.active {
+    display: flex;
+}
+
+#slider .item .item-slider .caption {
+    line-height: 50px;
+    width: 1200px;
+    margin: auto;
+}
+
+#slider .item-slider .caption h1 {
+    font-size: 37px;
+    animation: text 1s ease forwards;
+    -webkit-animation: text 1s ease forwards;
+    opacity: 0;
+}
+
+#slider .item-slider .caption h3 {
+    font-size: 18px;
+    font-weight: 100;
+    animation: text 1s ease forwards;
+    -webkit-animation: text 1s ease forwards;
+    opacity: 0;
+    animation-delay: .5s;
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-120px);
+        -webkit-transform: translateX(-120px);
+        -moz-transform: translateX(-120px);
+        -ms-transform: translateX(-120px);
+        -o-transform: translateX(-120px);
+    }
+}
+
+#slider .controls svg {
+    color: white;
+}
+
+#slider .controls .next,
+#slider .controls .prev {
+    background-color: rgb(5, 5, 5);
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+#slider .controls .next {
+    right: 30px;
+}
+
+#slider .controls .prev {
+    left: 30px;
+}
+
+#slider .controls .next:hover,
+#slider .controls .prev:hover {
+    background-color: #c00;
+}
+
+@keyframes proggess {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* main */
+
+main {
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+main article {
+    width: 65%;
+    padding: 15px 5px;
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+}
+
+main aside {
+    width: 32%;
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    height: 100%;
+    position: sticky;
+    top: 20px;
+}
+
+
+/* dress */
+
+main article .dresses {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+main article .dresses .dress-item {
+    width: 23%;
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main article .dresses .dress-item h4 {
+    padding: 10px 0;
+}
+
+main article .dresses .dress-item h3 {
+    padding: 10px 0 5px 0;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    line-height: 1.5;
+}
+
+main article .dresses .dress-item h4 {
+    font-family: 'yekan';
+    color: green;
+    text-align: center;
+}
+
+main article .dresses .dress-item h4 span {
+    color: #1a1818;
+    font-family: 'vazir';
+}
+
+main article .dresses .dress-item img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* dress */
+
+main article .coats {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main article .coats .coat-item {
+    width: 23%;
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main article .coats .coat-item h4 {
+    padding: 10px 0;
+}
+
+main article .coats .coat-item h3 {
+    padding: 10px 0 5px 0;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+main article .coats .coat-item h4 {
+    font-family: 'yekan';
+    color: green;
+    text-align: center;
+}
+
+main article .coats .coat-item h4 span {
+    color: #1a1818;
+    font-family: 'vazir';
+}
+
+main article .coats .coat-item img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* best-selling-men */
+
+main article .best-selling-men {
+    padding: 20px 0 0 0;
+}
+
+main article .best-selling-men .dress-men {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+article .best-selling-men .title-best {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+article .best-selling-men .title-best::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+article .best-selling-men .title-best h1 {
+    font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 13px;
+    position: relative;
+}
+
+article .best-selling-men .title-best a {
+    color: #1a1818;
+}
+
+article .best-selling-men .title-best h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #b80000;
+}
+
+article .best-selling-men .title-best h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+}
+
+article .best-selling-men .dress-men .man-item {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+article .best-selling-men .dress-men .man-item:hover {
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+article .best-selling-men .dress-men .man-item img {
+    width: 100%;
+    height: 100%;
+}
+
+article .best-selling-men .dress-men .man-item h4 {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+article .best-selling-men .dress-men .man-item h4:nth-child(1) {
+    color: rgb(6, 10, 5) !important;
+    font-family: 'yekan';
+}
+
+
+
+article .best-selling-men .dress-men .man-item h4:nth-child(2) {
+    color: green !important;
+    padding-bottom: 10px;
+    font-family: 'yekan';
+}
+
+
+
+
+/* best-selling-boy */
+
+main article .best-selling-boy .boy-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+article .best-selling-boy .title-best-boy {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+article .best-selling-boy .title-best-boy::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+article .best-selling-boy .title-best-boy h1 {
+    font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 13px;
+    position: relative;
+}
+
+article .best-selling-boy .title-best-boy a {
+    color: #1a1818;
+}
+
+article .best-selling-boy .title-best-boy h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #b80000;
+}
+
+article .best-selling-boy .title-best-boy h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+}
+
+article .best-selling-boy .boy-items .boy-item {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+article .best-selling-boy .boy-items .boy-item:hover {
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+article .best-selling-boy .boy-items .boy-item img {
+    width: 100%;
+    height: 100%;
+}
+
+article .best-selling-boy .boy-items .boy-item h4 {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+article .best-selling-boy .boy-items .boy-item h4:nth-child(1) {
+    color: black !important;
+    font-family: 'yekan';
+}
+
+article .best-selling-boy .boy-items .boy-item h4:nth-child(2) {
+    color: green !important;
+    padding-bottom: 10px;
+    font-family: 'yekan';
+}
+
+
+
+
+/* watche-men */
+
+#watch-men {
+    width: 100%;
+}
+
+#watch-men .watch-men-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#watch-men .watch-men-title::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+#watch-men .watch-men-title a {
+    color: black;
+}
+
+#watch-men .watch-men-title h1 {
+    position: relative;
+    padding: 10px 0;
+}
+
+#watch-men .watch-men-title h1::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+#watch-men .watch-men-title h1::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 1px;
+    width: 15px;
+    background-color: #fff;
+}
+
+#watch-men .men-watch-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#watch-men .men-watch-items .men-watch-single {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#watch-men .men-watch-items .men-watch-single:hover {
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+#watch-men .men-watch-items .men-watch-single h4:nth-child(1) {
+    color: black;
+    padding-top: 5px;
+}
+
+#watch-men .men-watch-items .men-watch-single h4:nth-child(2) {
+    color: green;
+    font-family: 'yekan';
+    padding-bottom: 10px;
+}
+
+#watch-men .men-watch-items .men-watch-single img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* bag-woman */
+
+#bag-men {
+    width: 100%;
+}
+
+#bag-men .bag-men-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#bag-men .bag-men-title::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+#bag-men .bag-men-title a {
+    color: black;
+}
+
+#bag-men .bag-men-title h1 {
+    position: relative;
+    padding: 10px 0;
+}
+
+#bag-men .bag-men-title h1::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+#bag-men .bag-men-title h1::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 1px;
+    width: 15px;
+    background-color: #fff;
+}
+
+#bag-men .men-bag-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#bag-men .men-bag-items .men-bag-single {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#bag-men .men-bag-items .men-bag-single:hover {
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+#bag-men .men-bag-items .men-bag-single h4:nth-child(1) {
+    color: black;
+    padding-top: 5px;
+}
+
+#bag-men .men-bag-items .men-bag-single h4:nth-child(2) {
+    color: green;
+    font-family: 'yekan';
+    padding-bottom: 10px;
+}
+
+#bag-men .men-bag-items .men-bag-single img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* cosmetic */
+
+article #cosmetic {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+article #cosmetic a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article #cosmetic img {
+    width: 98%;
+}
+
+article #cosmetic h1 {
+    position: absolute;
+    top: 45%;
+    right: 60%;
+    color: black;
+    font-size: 30px;
+}
+
+
+/* women-dress */
+
+#women-dress {
+    width: 100%;
+}
+
+#women-dress .women-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#women-dress .women-title::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+#women-dress .women-title a {
+    color: black;
+}
+
+#women-dress .women-title h1 {
+    position: relative;
+    padding: 10px 0;
+}
+
+#women-dress .women-title h1::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+#women-dress .women-title h1::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 1px;
+    width: 15px;
+    background-color: #fff;
+}
+
+#women-dress .women-dress-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#women-dress .women-dress-items .woman-single {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#women-dress .women-dress-items .woman-single:hover {
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+#women-dress .women-dress-items .woman-single h4:nth-child(1) {
+    color: black;
+    padding-top: 5px;
+}
+
+#women-dress .women-dress-items .woman-single h4:nth-child(2) {
+    color: green;
+    font-family: 'yekan';
+    padding-bottom: 10px;
+}
+
+#women-dress .women-dress-items .woman-single img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* girls */
+
+#girls-dress {
+    width: 100%;
+}
+
+#girls-dress .girl-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#girls-dress .girl-title::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+#girls-dress .girl-title a {
+    color: black;
+}
+
+#girls-dress .girl-title h1 {
+    position: relative;
+    padding: 10px 0;
+}
+
+#girls-dress .girl-title h1::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+#girls-dress .girl-title h1::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 1px;
+    width: 15px;
+    background-color: #fff;
+}
+
+#girls-dress .girl-dress-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#girls-dress .girl-dress-items .girl-single {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#girls-dress .girl-dress-items .girl-single:hover {
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+#girls-dress .girl-dress-items .girl-single h4:nth-child(1) {
+    color: black;
+    padding-top: 5px;
+}
+
+#girls-dress .girl-dress-items .girl-single h4:nth-child(2) {
+    color: green;
+    font-family: 'yekan';
+    padding-bottom: 10px;
+}
+
+#girls-dress .girl-dress-items .girl-single img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* watche-woman */
+
+#watch-women {
+    width: 100%;
+}
+
+#watch-women .watch-woman-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#watch-women .watch-woman-title::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+#watch-women .watch-woman-title a {
+    color: black;
+}
+
+#watch-women .watch-woman-title h1 {
+    position: relative;
+    padding: 10px 0;
+}
+
+#watch-women .watch-woman-title h1::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+#watch-women .watch-woman-title h1::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 1px;
+    width: 15px;
+    background-color: #fff;
+}
+
+#watch-women .women-watch-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#watch-women .women-watch-items .woman-watch-single {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#watch-women .women-watch-items .woman-watch-single:hover {
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+#watch-women .women-watch-items .woman-watch-single h4:nth-child(1) {
+    color: black;
+    padding-top: 5px;
+}
+
+#watch-women .women-watch-items .woman-watch-single h4:nth-child(2) {
+    color: green;
+    font-family: 'yekan';
+    padding-bottom: 10px;
+}
+
+#watch-women .women-watch-items .woman-watch-single img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* bag-woman */
+
+#bag-women {
+    width: 100%;
+}
+
+#bag-women .bag-woman-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#bag-women .bag-woman-title::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #afafaf;
+}
+
+#bag-women .bag-woman-title a {
+    color: black;
+}
+
+#bag-women .bag-woman-title h1 {
+    position: relative;
+    padding: 10px 0;
+}
+
+#bag-women .bag-woman-title h1::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+#bag-women .bag-woman-title h1::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 1px;
+    width: 15px;
+    background-color: #fff;
+}
+
+#bag-women .women-bag-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#bag-women .women-bag-items .woman-bag-single {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#bag-women .women-bag-items .woman-bag-single:hover {
+    box-shadow: 0px 2px 15px rgba(172, 170, 170, 0.3);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+
+#bag-women .women-bag-items .woman-bag-single h4:nth-child(1) {
+    color: black;
+    padding-top: 5px;
+}
+
+#bag-women .women-bag-items .woman-bag-single h4:nth-child(2) {
+    color: green;
+    font-family: 'yekan';
+    padding-bottom: 10px;
+}
+
+#bag-women .women-bag-items .woman-bag-single img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* aside */
+
+aside h3 {
+    margin: 10px 10px;
+    padding: 22px 8px;
+    position: relative;
+}
+
+aside h3::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: #c00;
+}
+
+aside .last-products {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+aside .last-products .last-product {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+aside .last-products .last-product:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+aside .last-products .last-product img {
+    width: 100%;
+}
+
+aside .last-products .last-product h5 {
+    padding: 15px 0;
+}
+
+
+/* best-selling-products */
+
+aside h3 {
+    margin: 10px 10px;
+    padding: 22px 8px;
+    position: relative;
+}
+
+aside h3::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+aside .best-selling-products {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+aside .best-selling-products .best-selling-product {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+aside .best-selling-products .best-selling-product:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+aside .best-selling-products .best-selling-product img {
+    width: 100%;
+    height: 100%;
+}
+
+aside .best-selling-products .best-selling-product h5 {
+    padding: 15px 0;
+}
+
+
+/* sunglasses */
+
+aside h3 {
+    margin: 10px 10px;
+    padding: 22px 8px;
+    position: relative;
+}
+
+aside h3::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+aside .sunglasses {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+aside .sunglasses .single-sunglasses {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+aside .sunglasses .single-sunglasses:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    cursor: pointer;
+}
+
+aside .sunglasses .single-sunglasses img {
+    width: 100%;
+    height: 100%;
+}
+
+aside .sunglasses .single-sunglasses h5 {
+    padding: 15px 0;
+}
+
+
+/* toys */
+
+aside h3 {
+    margin: 10px 10px;
+    padding: 22px 8px;
+    position: relative;
+}
+
+aside h3::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+aside .toys {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+aside .toys .single-toy {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+aside .toys .single-toy:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    cursor: pointer;
+}
+
+aside .toys .single-toy img {
+    width: 100%;
+    height: 100%;
+}
+
+aside .toys .single-toy h5 {
+    padding: 15px 0;
+}
+
+
+/* girl-shoes */
+
+aside h3 {
+    margin: 10px 10px;
+    padding: 22px 8px;
+    position: relative;
+}
+
+aside h3::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #c00;
+}
+
+aside .girl-shoes {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+aside .girl-shoes .single-shoes-girl {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+aside .girl-shoes .single-shoes-girl:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    cursor: pointer;
+}
+
+aside .girl-shoes .single-shoes-girl img {
+    width: 100%;
+    height: 100%;
+}
+
+aside .girl-shoes .single-shoes-girl h5 {
+    padding: 15px 0;
+}
+
+
+/* banner */
+
+aside .banner {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* suggested */
+
+#suggested {
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+}
+
+#suggested .discount-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#suggested .discount-products h1 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#suggested .discount-products .suggest-items {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#suggested .discount-products .suggest-items .suggest-single {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+#suggested .discount-products .suggest-items .suggest-single button {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: 2px solid #c00;
+    background-color: #f74141;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#suggested .discount-products .suggest-items .suggest-single img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#suggested .discount-products .suggest-items .suggest-single .single-info {
+    color: #fff;
+}
+
+#suggested .discount-products .suggest-items .suggest-single .single-info .price {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+#suggested .discount-products .suggest-items .suggest-single .single-info .price h3:nth-child(1) {
+    color: #fff;
+}
+
+#suggested .discount-products .suggest-items .suggest-single .single-info .price h3:nth-child(2) {
+    color: rgb(184, 39, 39);
+    text-decoration: line-through;
+}
+
+#suggested .discount-products .suggest-items .suggest-single .single-info h3 {
+    text-align: center;
+    font-family: 'yekan';
+    color: green;
+}
+
+#suggested .discount-products .suggest-items .suggest-single .single-info h3 span {
+    font-family: 'vazir';
+    color: #fff;
+}
+
+
+/* favorites */
+
+#popular-products {
+    width: 100%;
+    margin: 50px 0;
+}
+
+#popular-products .favorite-products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px dashed gray;
+    padding: 30px 0 30px 0;
+}
+
+#popular-products .favorite-products .favorite-items {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    border-left: 5px dashed gray;
+}
+
+#popular-products .favorite-products .favorite-items .favorite-single {
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+#popular-products .favorite-products .favorite-items .favorite-single .favorite-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#popular-products .favorite-products .favorite-items .favorite-single .favorite-info .rate-love h5 {
+    font-family: 'yekan';
+}
+
+#popular-products .favorite-products .favorite-items .favorite-single .favorite-info .rate-love svg {
+    color: #c00;
+}
+
+#popular-products .favorite-products .favorite-items .favorite-single .favorite-info .single-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#popular-products .favorite-products .favorite-items .favorite-single .favorite-info .single-info h5 {
+    font-family: 'yekan';
+}
+
+#popular-products .favorite-products .favorite-items .favorite-single .favorite-info .single-info h5 span {
+    font-family: 'vazir';
+}
+
+#popular-products .favorite-products .favorite-items .favorite-single .favorite-info .single-info>svg {
+    margin: 0 10px;
+}
+
+#popular-products .favorite-products .favorite-items .favorite-single img {
+    width: 100%;
+    height: 100%;
+}
+
+#popular-products .favorite-products .popular-title {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c00;
+    font-size: 25px;
+}
+
+#popular-products .favorite-products .popular-title h1 {
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: black;
+}
+
+footer .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #c00;
+    padding: 30px 0;
+}
+
+footer .footer-top .about-us {
+    color: #fff;
+    width: 30%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+footer .footer-top .about-us p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+footer .footer-top .last-news h3 {
+    text-align: center;
+}
+
+footer .footer-top .last-news form {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+footer .footer-top .last-news form input {
+    margin-left: 8px;
+    border: none;
+    padding: 10px 25px;
+    font-family: 'vazir';
+}
+
+footer .footer-top .last-news form button {
+    color: #fff;
+    font-family: 'vazir';
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background-color: #c00;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+footer .footer-top .last-news form button:hover {
+    background-color: rgba(214, 206, 206, 0.596);
+}
+
+footer .footer-top .social {
+    color: #fff;
+    width: 30%;
+}
+
+footer .footer-top .social h3 {
+    text-align: center;
+}
+
+footer .footer-top .social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer .footer-top .social ul li a svg {
+    font-size: 30px;
+    padding: 10px 15px;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+footer .footer-top .social ul li a:hover svg {
+    color: #c00;
+}
+
+footer .footer-top .last-news {
+    width: 30%;
+    color: #fff;
+}
+
+footer .footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+footer .footer-bottom .services-customers {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-bottom .quick-access {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-bottom .quick-access ul li:nth-child(1) {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+footer .footer-bottom .quick-access ul {
+    line-height: 2;
+}
+
+footer .footer-bottom .quick-access ul li {
+    font-size: 14px;
+}
+
+footer .footer-bottom .quick-access ul li a {
+    color: #fff;
+}
+
+footer .footer-bottom .icons {
+    width: 30%;
+    margin-top: 10px;
+}
+
+footer .footer-bottom .icons .wrapper-icon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-bottom .icons .wrapper-icon .img-single {
+    width: 50%;
+}
+
+footer .footer-bottom .icons .wrapper-icon .img-single img {
+    width: 50%;
+    height: auto;
+}
+
+footer .footer-bottom .services-customers ul {
+    line-height: 2;
+    color: #fff;
+}
+
+footer .footer-bottom .services-customers ul li:nth-child(1) {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+footer .footer-bottom .services-customers ul li {
+    font-size: 14px;
+}
+
+footer .footer-bottom .services-customers ul li a {
+    color: #fff;
+}

@@ -1,0 +1,59 @@
+.footer {
+  padding: 8rem 0;
+  width: 100%;
+  background-color: rgb(37, 36, 36);
+  @include addFlexLayout;
+  &__wrapper {
+    @include sizeWrapper;
+    height: 80%;
+    @include cardLayout;
+    align-items: flex-start;
+    &-description {
+      width: 35%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      p {
+        width: 90%;
+        margin: auto;
+        font-size: 1.5rem;
+        text-align: justify;
+        color: $color-white;
+      }
+    }
+    &-logo {
+      width: 15%;
+      align-self: flex-start;
+      @include addFlexLayout;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 1rem;
+      }
+    }
+    &-options {
+      font-size: $font-size-20;
+      text-align: center;
+      width: 15%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      ul {
+        @media screen and (max-width: 768px) {
+          @include cardLayout(space-around);
+          margin: 1rem;
+        }
+        li {
+          a {
+            @extend %extendTransition;
+            color: $color-white;
+
+            &:hover {
+              color: $color-dark-green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

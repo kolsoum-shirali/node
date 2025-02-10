@@ -1,0 +1,461 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'), url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.woff2') format('woff2')
+}
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+.container {
+    width: 1300px;
+    margin: auto;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+
+header {
+    width: 100%;
+}
+
+header nav .navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .navbar .navbar-right ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav .navbar .navbar-right .hamburger-menu {
+    display: none;
+}
+
+header nav .navbar .navbar-right .hamburger-menu img {
+    width: 70px;
+    height: 70px;
+}
+
+header nav .navbar .navbar-right ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+}
+
+header nav .navbar .navbar-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .navbar .navbar-left ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav .navbar .navbar-left ul li svg {
+    font-size: 22px;
+    color: black;
+    margin: 0 10px;
+}
+
+header nav .navbar .navbar-left img {
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+header #slide {
+    background-image: url('../images/slide.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+header #slide .slider {
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+
+header #slide .slider span {
+    position: absolute;
+    left: 40%;
+    font-size: 120px;
+    top: 30%;
+    font-weight: 600;
+    font-family: 'arial';
+    color: rgb(209, 203, 203);
+}
+
+header #slide .slider .slide-description {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    line-height: .8;
+}
+
+header #slide .slider .slide-description h1 {
+    font-size: 110px;
+    margin-right: 150px;
+    color: rgb(112, 112, 112);
+}
+
+header #slide .slider .slide-description h2 {
+    font-size: 70px;
+}
+
+header #slide .slider-two {
+    display: none;
+}
+
+header #slide .slider-two .slider-title {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: .2;
+}
+
+
+/* hanging-lamp */
+
+#hanging-lamp {
+    width: 100%;
+}
+
+#hanging-lamp .hanging-lamp {
+    width: 100%;
+    display: flex;
+}
+
+#hanging-lamp .hanging-lamp .hanging-right {
+    width: 70%;
+    display: flex;
+}
+
+#hanging-lamp .hanging-lamp .hanging-right .hanging-description {
+    margin-right: 20px;
+    position: relative;
+}
+
+#hanging-lamp .hanging-lamp .hanging-right .hanging-description h1 {
+    font-size: 30px;
+    color: rgb(197, 129, 2);
+}
+
+#hanging-lamp .hanging-lamp .hanging-right .hanging-description p {
+    width: 100%;
+    font-size: 18px;
+}
+
+#hanging-lamp .hanging-lamp .hanging-right .hanging-description a {
+    position: absolute;
+    left: 0;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(194, 16, 16);
+}
+
+#hanging-lamp .hanging-lamp .hanging-right .hanging-img img {
+    width: 450px;
+    height: 270px;
+}
+
+#hanging-lamp .hanging-lamp .hanging-left {
+    background-color: rgb(189, 118, 12);
+    width: 40%;
+}
+
+#hanging-lamp .hanging-lamp .hanging-left .hanging-title {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: .3;
+}
+
+#hanging-lamp .hanging-lamp .hanging-left h1 {
+    font-size: 37px;
+}
+
+#hanging-lamp .hanging-lamp .hanging-left h2 {
+    font-size: 34px;
+}
+
+
+/* hang-part-two */
+
+#hang-part-two {
+    width: 100%;
+    overflow: auto;
+}
+
+#hang-part-two .hangs {
+    width: 100%;
+    display: flex;
+}
+
+#hang-part-two .hangs .hang-right {
+    width: 63.7%;
+}
+
+#hang-part-two .hangs .hang-right img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hang-part-two .hangs .hang-left {
+    width: 36.3%;
+}
+
+#hang-part-two .hangs .hang-left .hang-img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#hang-part-two .hangs .hang-left .hang-img .single-pic {
+    width: 50%;
+}
+
+#hang-part-two .hangs .hang-left .hang-img .single-pic .product {
+    line-height: .6;
+}
+
+#hang-part-two .hangs .hang-left .hang-img .single-pic img {
+    width: 250px;
+    height: 480px;
+}
+
+
+/* sofa */
+
+#sofa {
+    width: 100%;
+}
+
+#sofa .sofa {
+    width: 100%;
+    display: flex;
+}
+
+#sofa .sofa .sofa-right {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sofa .sofa .sofa-right .sofa-description {
+    margin-right: 20px;
+    position: relative;
+}
+
+#sofa .sofa .sofa-right .sofa-description h1 {
+    font-size: 30px;
+    color: rgb(46, 67, 92);
+}
+
+#sofa .sofa .sofa-right .sofa-description p {
+    width: 100%;
+    font-size: 18px;
+}
+
+#sofa .sofa .sofa-right .sofa-description a {
+    position: absolute;
+    left: 0;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(194, 16, 16);
+}
+
+#sofa .sofa .sofa-right .sofa-img img {
+    width: 300px;
+    height: 270px;
+    margin-top: 20px;
+}
+
+#sofa .sofa .sofa-left {
+    background-color: rgb(46, 67, 92);
+    width: 40%;
+}
+
+#sofa .sofa .sofa-left .sofa-title {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: .3;
+    color: white;
+}
+
+#sofa .sofa .sofa-left h1 {
+    font-size: 37px;
+}
+
+#sofa .sofa .sofa-left h2 {
+    font-size: 34px;
+}
+
+
+/* sofa-part-two */
+
+#sofa-part-two {
+    width: 100%;
+    overflow: auto;
+}
+
+#sofa-part-two .sofas {
+    width: 100%;
+    display: flex;
+}
+
+#sofa-part-two .sofas .sofa-right {
+    width: 63.7%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sofa-part-two .sofas .sofa-right img {
+    width: 100%;
+    height: 100%;
+}
+
+#sofa-part-two .sofas .sofa-left {
+    width: 36.3%;
+}
+
+#sofa-part-two .sofas .sofa-left .sofa-img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#sofa-part-two .sofas .sofa-left .sofa-img .single-sofa {
+    width: 50%;
+}
+
+#sofa-part-two .sofas .sofa-left .sofa-img .single-sofa .product-sofa {
+    line-height: .6;
+}
+
+#sofa-part-two .sofas .sofa-left .sofa-img .single-sofa img {
+    width: 250px;
+    height: 480px;
+}
+
+
+/* counters */
+
+#counters {
+    width: 100%;
+    color: white;
+    background-color: rgb(29, 26, 26);
+}
+
+#counters .counter-items {
+    text-align: center;
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#counters .counter-items .single-counter {
+    width: 25%;
+}
+
+#counters .counter-items .single-counter svg {
+    font-size: 2.5rem;
+}
+
+
+/* footer */
+
+#footer {
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(22, 19, 19);
+}
+
+#footer .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .footer ul {
+    color: white;
+    display: flex;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#footer .footer ul li {
+    margin: 0 10px;
+}
+
+#footer .footer h2 {
+    color: white;
+    padding: 0 25px;
+}
+
+#footer .footer ul li svg {
+    font-size: 1.4rem;
+}
+
+#footer .footer .description-footer {
+    width: 100%;
+    text-align: center;
+}
+
+#footer .footer .description-footer p {
+    color: white;
+    width: 50%;
+    border-top: 2px solid white;
+    margin: auto;
+    padding: 30px 0px;
+    font-size: 13px;
+}

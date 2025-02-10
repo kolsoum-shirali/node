@@ -1,0 +1,140 @@
+@mixin addFlexLayout($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin cardLayout($typeJustify:space-between) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $typeJustify;
+  align-items: center;
+}
+
+@mixin sizeWrapper {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+@mixin cardRadius($value: 7px) {
+  border-radius: $value;
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  -o-border-radius: $value;
+}
+
+@mixin btnStyle {
+  position: relative;
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  color: $color-black;
+  padding: 0.7rem 7rem;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  @extend %extendTransition;
+}
+
+@mixin btnStyleAfter {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  background-color: rgba(255, 255, 255, 0.363);
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+@mixin btnStyleHover {
+  box-shadow: 0 1rem 2rem rgba(17, 17, 26, 0.315);
+  cursor: pointer;
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+
+@mixin btnStyleHoverAfter($size: 2) {
+  transform: scale($size);
+  -webkit-transform: scale($size);
+  -moz-transform: scale($size);
+  -ms-transform: scale($size);
+  -o-transform: scale($size);
+  background-color: rgba(255, 255, 255, 0.363);
+  opacity: 0;
+}
+
+@mixin btngradient($width:40%){
+  
+      overflow: hidden;
+      @extend %extendTransition;
+      position: relative;
+      font-size: 1.5rem;
+      color: $color-dark-green;
+      @include addFlexLayout;
+      padding: 1rem 3rem;
+      margin: 2.5rem 0;
+      font-weight: bold;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 98%;
+        bottom: 0;
+        left:  $width;
+        right:  $width;
+        background-color: $color-dark-green;
+      }
+      &::after {
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -o-transform: translateY(50px);
+        @extend %extendTransition;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: $width;
+        right: $width;
+        background: linear-gradient(
+          rgba($color-light-green, 0.8),
+          rgba($color-dark-green, 0.8)
+        );
+        opacity: 0;
+      }
+      &:hover {
+        color: $color-white !important;
+        z-index: 1000;
+        &::after {
+          transform: translateY(0);
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+          opacity: 1;
+          z-index: -1;
+          box-shadow: $box-shadow-custom;
+        }
+      }
+      svg {
+        margin: 0 5px;
+      }
+ 
+}

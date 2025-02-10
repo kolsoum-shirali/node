@@ -1,0 +1,221 @@
+@media screen and (max-width:1400px) {
+    .container {
+        width: 90%;
+    }
+    #works .work-items .item span:hover h3 {
+        transform: translateX(135px);
+        -webkit-transform: translateX(135px);
+        -moz-transform: translateX(135px);
+        -ms-transform: translateX(135px);
+        -o-transform: translateX(135px);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #works .work-items .item span:hover h3 {
+        transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+    }
+    #contact .contact-ways form .form-info .info .name-input input,
+    #contact .contact-ways form .form-info .info .email-input input {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #about-us .about {
+        flex-wrap: wrap;
+    }
+    #about-us .about .about-content {
+        width: 100%;
+    }
+    #about-us .about .about-img {
+        width: 100%;
+    }
+    #about-us .about .about-content .contact-us button {
+        margin: 30px 0;
+        font-size: 18px;
+    }
+    #about-us .about .about-content .about-description h1 {
+        font-size: 30px;
+    }
+    #services h1 {
+        font-size: 30px;
+    }
+    #services .service-items .item h3 {
+        font-size: 20px;
+    }
+    #works h1 {
+        font-size: 30px;
+    }
+    #works .work-items .item span:hover h3 {
+        transform: translateX(70px);
+        -webkit-transform: translateX(70px);
+        -moz-transform: translateX(70px);
+        -ms-transform: translateX(70px);
+        -o-transform: translateX(70px);
+    }
+    #contact .contact-ways h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header .header-title h1 {
+        font-size: 30px;
+    }
+    header .header-title h2 {
+        font-size: 20px;
+    }
+    .navbar ul li a {
+        font-size: 15px;
+    }
+    #about-us .about .about-content .about-description h1 {
+        font-size: 30px;
+    }
+    #about-us .about .about-content .about-description p {
+        font-size: 15px;
+    }
+    #about-us .about .about-content .numbers-about .item-about h3 {
+        font-size: 15px;
+    }
+    #about-us .about .about-content .contact-us button {
+        font-size: 15px;
+    }
+    #works .work-items .item span:hover h3 {
+        transform: translateX(40px);
+        -webkit-transform: translateX(40px);
+        -moz-transform: translateX(40px);
+        -ms-transform: translateX(40px);
+        -o-transform: translateX(40px);
+    }
+}
+
+@media screen and (max-width:576px) {
+    header .header-title h1 {
+        letter-spacing: 0;
+    }
+    .navbar ul {
+        display: none;
+    }
+    #about-us .about .about-content .numbers-about {
+        flex-wrap: wrap;
+    }
+    #about-us .about .about-content .numbers-about .item-about {
+        width: 50%;
+        margin: 5px 0;
+    }
+    #services .service-items .item {
+        width: 49%;
+        margin-bottom: 10px
+    }
+    #about-us .about .about-content .about-description h1 {
+        font-size: 25px;
+    }
+    #services h1 {
+        font-size: 25px;
+    }
+    #services .service-items .item h3 {
+        font-size: 18px;
+    }
+    #works h1 {
+        font-size: 25px;
+    }
+    #works .work-items {
+        flex-wrap: wrap;
+    }
+    #works .work-items .item {
+        width: 49%;
+        margin-bottom: 10px;
+    }
+    #works .work-items .item span:hover h3 {
+        transform: translateX(40px);
+        -webkit-transform: translateX(40px);
+        -moz-transform: translateX(40px);
+        -ms-transform: translateX(40px);
+        -o-transform: translateX(40px);
+    }
+    #contact .contact-ways h1 {
+        font-size: 25px;
+    }
+    #contact .contact-ways form .form-info .info {
+        display: block;
+    }
+    #contact .contact-ways form .form-info .info {
+        width: 80%;
+    }
+    #contact .contact-ways form .form-info .info .name-input,
+    #contact .contact-ways form .form-info .info .email-input {
+        width: 100%;
+        padding: 20px 0;
+    }
+    #contact .contact-ways form .form-info .description {
+        width: 100%;
+    }
+    #contact .contact-ways form .form-info .info .name-input input,
+    #contact .contact-ways form .form-info .info .email-input input {
+        width: 100%;
+    }
+    #contact .contact-ways form .form-info textarea {
+        width: 80%;
+    }
+    footer .relation-ship {
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+    footer .relation-ship .item-ship {
+        width: 100%;
+    }
+    footer .social ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header .header-title h1 {
+        font-size: 20px;
+    }
+    header .header-title h2 {
+        font-size: 17px;
+    }
+    #about-us .about .about-content .about-description h1 {
+        font-size: 22px;
+    }
+    #about-us .about .about-content .about-description p {
+        font-size: 10px;
+    }
+    #about-us .about .about-content .numbers-about .item-about h3 {
+        font-size: 14px;
+    }
+    #about-us .about .about-content .contact-us button {
+        font-size: 12px;
+    }
+    #services .service-items .item {
+        width: 100%;
+    }
+    #services h1 {
+        font-size: 22px;
+    }
+    #services .service-items .item h3 {
+        font-size: 15px;
+    }
+    #works h1 {
+        font-size: 22px;
+    }
+    #works .work-items .item {
+        width: 100%;
+    }
+    #works .work-items .item span:hover h3 {
+        transform: translateX(75px);
+        -webkit-transform: translateX(75px);
+        -moz-transform: translateX(75px);
+        -ms-transform: translateX(75px);
+        -o-transform: translateX(75px);
+    }
+    #contact .contact-ways h1 {
+        font-size: 22px;
+    }
+}
